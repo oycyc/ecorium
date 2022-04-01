@@ -79,11 +79,15 @@ li a.nav-text span {
 
 .header a {
   padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header #logo {
   display: block;
   transition: 0.25s ease-in;
+  width: 80px;
 }
 
 .header #logo:hover {
