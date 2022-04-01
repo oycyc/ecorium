@@ -61,8 +61,14 @@ li a.nav-text span {
 }
 
 /* Navbar styles */
+.nav-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .header {
+  max-width: 1240px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -95,11 +101,11 @@ li a.nav-text span {
 }
 
 #navbar-main {
-  padding-left: 150px;
-  padding-right: 200px;
+  /* padding-left: 150px;
+  padding-right: 200px; */
   position: relative;
-  background-color: rgba(151, 151, 151, 0.1);
-  backdrop-filter: blur(8px);
+  /* background-color: rgba(151, 151, 151, 0.1);
+  backdrop-filter: blur(8px); */
 }
 
 #navbar-main ul {
