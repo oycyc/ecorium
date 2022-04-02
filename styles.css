@@ -78,7 +78,6 @@ li a.nav-text span {
 }
 
 .header a {
-  padding-left: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
