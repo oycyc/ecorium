@@ -73,6 +73,7 @@ li a.nav-text span {
   align-items: center;
   justify-content: space-between;
   margin: 30px 0 0 0;
+  position: absolute;
   width: 100%;
 }
 
@@ -251,128 +252,128 @@ li a.nav-text span {
 }
 
 /* Hero Section */
+
 .hero-section {
-  display: flex; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plant-1 {
+  right: 0;
+}
+
+.plant-2 {
+  left: 0;
+}
+
+.plant-1,
+.plant-2 {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0.5rem;
+  width: 200px;
+  height: 200px;
+}
+
+@media (min-width: 1024px) {
+  .plant-1,
+  .plant-2 {
+    display: block;
+  }
+}
+
+.hero-center {
+  display: flex;
   padding-left: 2.5rem;
-  padding-right: 2.5rem; 
-  display: flex; 
-  flex-direction: column; 
-  max-width: 72rem; 
+  padding-right: 2.5rem;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero-section-text {
-  display: flex; 
-  padding-right: 2.5rem; 
-  margin-bottom: 3rem; 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: flex-start; 
-  width: 100%; 
-}
-
-.hero-section-text div p {
-  margin-bottom: 0.5rem; 
-  color: #000000; 
-  font-size: 1rem;
-  line-height: 1.5rem; 
-  font-weight: 700; 
-}
-
-.hero-title {
-  color: #111827; 
+.hero-center-text {
+  display: inline-block;
+  position: relative;
+  color: #000000;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 2.25rem;
-  line-height: 2.5rem; 
-  font-weight: 800; 
-  letter-spacing: -0.025em; 
+  line-height: 2.5rem;
+  font-weight: 900;
+  width: 100%;
 }
 
-.hero-title span {
-  display: block; 
-  color: #EC4899; 
-}
-
-.hero-text-small {
-  margin-top: 2rem;
-  margin-bottom: 2rem; 
-  color: #4B5563; 
+.hero-center-p {
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 1.75rem;
   font-size: 1.125rem;
-  line-height: 1.75rem; 
+  line-height: 1.75rem;
+  width: 100%;
 }
 
-.hero-button-container {
-  display: flex; 
-  position: relative; 
-  padding-top: 1rem; 
-  margin-left: 0.75rem; 
-  margin-left: 0.875rem; 
-  display: flex; 
-  align-items: center; 
+.hero-bottom {
+  position: absolute;
+  bottom: 0;
+  margin-top: -2.5rem;
+  color: #ffffff;
+  width: 100%;
+  fill: currentColor;
 }
 
-.hero-section-buttons a {
-  position: relative; 
-  font-size: 1.5rem;
-  line-height: 2rem; 
+.button-1-test {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
-.hero-button {
-  position: relative; 
-  z-index: 10; 
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; 
-  padding-left: 1.25rem;
-  padding-right: 1.25rem; 
-  background-color: #A7F3D0; 
-  color: #064E3B; 
-  font-weight: 700; 
-  line-height: 1.25; 
-  border-radius: 0.5rem; 
-  border-width: 4px; 
-  border-color: #000000; 
+.button-shadow-test1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  background-color: #111827;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  opacity: 0.1;
 }
 
-.hero-image {
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center; 
-  width: 100%; 
-}
-
-
-@media (min-width: 768px) { 
-  .hero-text-small {
-    font-size: 1.25rem;
-    line-height: 1.75rem; 
-  }
- }
-
-
-
-@media (min-width: 1024px) { 
-  .hero-section {
-    flex-direction: row; 
+@media (min-width: 640px) {
+  .hero-center-text {
+    font-size: 3.75rem;
+    line-height: 1;
+    text-align: center;
   }
 
-  .hero-section-text {
-    margin-bottom: 0; 
-    width: 50%; 
+  .hero-center-p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
   }
 
-  .hero-image {
-    width: 50%; 
+  .button-1-test {
+    width: auto;
   }
 }
-
-@media (min-width: 1280px) { 
-  .hero-title span {
-    display: inline;
-  } 
- }
-
-
-
 
 /* list of categories */
 .letter-spacing-01 {
