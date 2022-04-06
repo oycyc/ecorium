@@ -8,6 +8,12 @@
   	animation: slide 60s linear infinite;
 }
 
+@media screen and (max-width: 800px) { /* breakpoint of when the image starts to not correspond with aspect ratio */
+	#bike-background {
+		background-size: cover;
+	}
+}
+
 @keyframes slide{
   0% {
     background-position: 0px 100%;
