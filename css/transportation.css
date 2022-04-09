@@ -1,7 +1,6 @@
 #bike-background {
-	width: 100%;
-	height: 100%;
-	position: absolute;
+	width: 100vw;
+	height: 100vh;
 	background-image: url("../tree-bg.jpg");
 	background-size: contain;
 	background-repeat: repeat-x;
@@ -21,4 +20,11 @@
   100% {
     background-position: 0px 100%;
   }
+}
+
+#intro-fact {
+	padding: 100px;
+	background-color: #344e41;
+	justify-content: center;
+	align-items: center;
 }
