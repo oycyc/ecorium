@@ -183,8 +183,8 @@
 }
 
 #categories {
-    padding-left: 0;
-    padding-right: 0; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
     margin-left: auto;
     margin-right: auto;
     padding-top: 2.5rem;
@@ -203,6 +203,7 @@
     flex-direction: column; 
     align-items: center; 
     height: 100%; 
+    border-radius: 0.75rem;
 }
 
 .category-block-margin {
@@ -335,13 +336,12 @@
     }
 
     #categories {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem; 
+        padding-left: 6.5rem;
+        padding-right: 6.5rem; 
     }
 
     .category-block { 
         flex-direction: row; 
-        border-radius: 0.75rem; 
     }
     
     .category-text-left {
