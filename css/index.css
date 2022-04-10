@@ -134,6 +134,53 @@
 
 
 /* Areas of Impact Categories */
+#category-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+#category-heading-container p {
+    max-width: 60ch;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#category-heading {
+    position: relative;
+    font-size: 12vw;
+}
+
+#category-heading::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: url(../tree-bg.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-right: 2px solid #034225;
+    overflow: hidden;
+    animation: category-heading-animation 12s linear infinite;
+}
+
+@keyframes category-heading-animation {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    
+    70%, 90% {
+        width: 100%;
+    }
+}
+
 #categories {
     padding-left: 0;
     padding-right: 0; 
@@ -177,6 +224,7 @@
 
 .category-text-left h2 {
     display: inline-block; 
+    padding-bottom: 0.5rem; 
     font-size: 3rem;
     line-height: 1; 
     font-weight: 700; 
@@ -184,7 +232,7 @@
 }
 
 .category-text-left h3 {
-    color: #E0E7FF; 
+    color: #EEF2FF; 
     font-size: 3rem;
     line-height: 1; 
     font-weight: 700; 
@@ -281,6 +329,10 @@
 }
 
 @media (min-width: 768px) { 
+    #category-heading {
+        font-size: 7vw;
+    }
+
     #categories {
         padding-left: 2.5rem;
         padding-right: 2.5rem; 
@@ -333,6 +385,7 @@
 }
 
 @media (min-width: 1024px) { 
+
     .category-text-left {
         padding-right: 2.5rem; 
         padding-left: 4rem;
