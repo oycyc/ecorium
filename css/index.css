@@ -41,7 +41,6 @@
 }
 
 #hero-container-text p {
-    font-family: var(--font-family);
     font-size: 20px;
     line-height: 27px;
     color: var(--color-text);
