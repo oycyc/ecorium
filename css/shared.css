@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 /* Declare global variables */
 :root {
   --black: #0b0d17;
@@ -17,7 +19,7 @@
 /* Set default body styles */
 body {
   font-size: 22px;
-
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Set default a tag styles */
