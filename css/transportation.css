@@ -1,3 +1,13 @@
+:root {
+	--bright: #ffcc3f;
+	--green: #344E41;
+	--blue: #38A3A5;
+}
+
+body {
+	overflow-x: hidden;
+}
+
 #bike-background {
 	width: 100vw;
 	height: 100vh;
@@ -5,18 +15,6 @@
 	background-size: contain;
 	background-repeat: repeat-x;
   animation: slide 60s linear infinite;
-}
-
-#tag {
-	font-size: 4em;
-	margin-top: 3em;
-	text-align: center;
-}
-
-@media screen and (max-width: 800px) { /* breakpoint of when the image starts to not correspond with aspect ratio */
-	#bike-background {
-		background-size: cover;
-	}
 }
 
 @keyframes slide{
@@ -28,9 +26,54 @@
   }
 }
 
-#intro-fact {
-	padding: 100px;
-	background-color: #344e41;
-	justify-content: center;
-	align-items: center;
+#tag {
+	font-weight: 700;
+	font-size: 5rem;
+	margin-top: 3em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+@media screen and (max-width: 800px) { /* breakpoint of when the image starts to not correspond with aspect ratio */
+	#bike-background {
+		background-size: cover;
+	}
+
+	.split {
+		flex-direction: column;
+	}
+
+	.bg-bright {
+		padding: 3rem;
+	}
+}
+
+.bg-bright {
+	background-color: var(--bright);
+	color: var(--blue);
+	padding: 4rem;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.split {
+	display: flex;
+	flex-direction: row;
+}
+
+.split > * {
+	flex-basis: 100%;
+} /*applies to every child in the split class*/
+
+
+.split > * + * {
+	margin-left: 2em;
+} /*applies to element with a previous element*/
+
+.text {
+	line-height: 2rem;
+	text-align: center;
 }
