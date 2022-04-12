@@ -4,7 +4,13 @@
 	background-image: url("../tree-bg.jpg");
 	background-size: contain;
 	background-repeat: repeat-x;
-  	animation: slide 60s linear infinite;
+  animation: slide 60s linear infinite;
+}
+
+#tag {
+	font-size: 4em;
+	margin-top: 3em;
+	text-align: center;
 }
 
 @media screen and (max-width: 800px) { /* breakpoint of when the image starts to not correspond with aspect ratio */
