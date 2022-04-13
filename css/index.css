@@ -429,29 +429,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../assets/green-test.jpg");
-    background-size: cover;
-    background-position: center;
     height: 100vh;
 
+    background-image: url("../assets/green-test.jpg");
+    background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .glass {
-    height: 100%;
-    width: 100%;
-    background-image: url("../assets/green-test.jpg");
-    background-size: cover;
-    background-position: center;
-    -webkit-clip-path: inset(10em);
-            clip-path: inset(10em);
-    filter: blur(20px);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
+    -webkit-clip-path: inset(10em);
+            clip-path: inset(10em);
+    filter: blur(20px);
 
+    background-image: url("../assets/green-test.jpg");
+    background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -465,6 +463,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .drop-shadow:before {
   display: block;
   content: "";
@@ -477,7 +476,8 @@
   border-right: 1px solid rgba(225, 225, 225, 0.3);
   z-index: 2;
 }
-.drop-shadow > span {
+
+.our-mission-text {
   position: absolute;
   z-index: 5;
   color: rgb(0, 0, 0);
@@ -494,12 +494,12 @@
     top: 5em;
     width: calc(100% - 10em);
   }
-  .drop-shadow > span {
+  .our-mission-text {
     font-size: 4em;
   }
 }
 @media (max-width: 640px) {
-  .drop-shadow > span {
+  .our-mission-text {
     font-size: 2em;
   }
 }
