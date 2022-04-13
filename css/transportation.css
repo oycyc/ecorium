@@ -77,3 +77,11 @@ img {
 	line-height: 2rem;
 	text-align: center;
 }
+
+svg {
+	display: block;
+}
+
+.upper {
+	background: var(--green);
+}
