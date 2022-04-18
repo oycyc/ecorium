@@ -775,3 +775,238 @@
     transition: 0.6s all ease-in-out;
     transform: translateX(0);
 }
+
+/* benefits of climate change */
+
+#benefits {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+    -webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	user-select: none;
+}
+
+.benefits-container {
+    margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 100vh;
+}
+
+@counter-style symbols {
+	system: cyclic;
+	symbols: "\01F30E";
+	suffix: "  ";
+}
+
+.benefits-container div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	background: #111;
+	padding: 20px;
+	border-radius: 50px;
+	outline: 1px solid white;
+}
+
+.benefits-title {
+	position: relative;
+	font-size: 20pt;
+	margin: 0;
+	line-height: 34pt;
+	color: #eee;
+	margin-bottom: 10px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.benefits-title::after {
+    position: absolute;
+	bottom: 0;
+	right: 100%;
+	width: 800%;
+	height: 4px;
+	background: linear-gradient(
+		90deg,
+		Red,
+		Orange,
+		Yellow,
+		LawnGreen,
+		Blue,
+		Violet
+	);
+	background-position: center;
+	content: "";
+	animation: title 5s ease-in-out infinite;
+}
+
+@keyframes title {
+	0% {
+		right: 100%;
+	}
+	100% {
+		right: -800%;
+	}
+}
+
+.benefits-list {
+    position: relative;
+    width: 100%;
+	max-height: 230px;
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
+    padding-inline-start: 40px;
+	padding-bottom: 15px;
+}
+
+.benefits-list li {
+    position: relative;
+	color: #ccc;
+	padding: 10px 50px 10px 12px;
+	list-style-type: symbols;
+	font-size: 12pt;
+	line-height: 24pt;
+	font-weight: 500;
+	margin: 0px 60px 0px 0px;
+	text-shadow: 1px 1px 0px black, 2px 2px 0px black;
+	transition: all 0.1s linear;
+}
+
+.benefits-list li::after {
+    position: absolute;
+	bottom: 5px;
+	right: 10%;
+	width: 100%;
+	height: 2px;
+	background: #111;
+	content: "";
+	transition: all 0.2s ease-in-out;
+}
+
+.benefits-list li:hover {
+    background: #ccc;
+	color: black;
+	cursor: pointer;
+	text-shadow: none;
+	transition: all 0.1s linear;
+}
+
+.benefits-list li:hover::after {
+    right: -20%;
+	transition: all 0.2s ease-in-out;
+}
+
+.benefits-list li::marker {
+    animation: idle 8s linear infinite;
+}
+
+@keyframes idle {
+	0% {
+		transform: rotateY(0deg) translateX(0px) scale(1);
+		filter: saturate(100%) brightness(1);
+	}
+	50% {
+		transform: rotateY(180deg) translateX(10px) scale(1.4);
+		filter: saturate(300%) brightness(2);
+	}
+	100% {
+		transform: rotateY(360deg) translateX(0px) scale(1);
+		filter: saturate(100%) brightness(1);
+	}
+}
+
+
+@media (max-width: 1090px) {
+	.benefits-container {
+		max-width: 920px;
+	}
+}
+
+@media (max-width: 990px) {
+	.benefits-container {
+		max-width: 820px;
+	}
+}
+
+@media (max-width: 890px) {
+	.benefits-container {
+		max-width: 720px;
+	}
+}
+
+@media (max-width: 790px) {
+	.benefits-container {
+		max-width: 620px;
+	}
+}
+
+@media (max-width: 690px) {
+	.benefits-container {
+		max-width: 520px;
+	}
+	.benefits-list li {
+		padding: 10px 20px 10px 12px;
+		margin: 0px 40px 0px 0px;
+	}
+}
+
+@media (max-width: 590px) {
+	.benefits-container {
+		max-width: 420px;
+	}
+}
+
+@media (max-width: 490px) {
+	.benefits-container {
+		max-width: 320px;
+	}
+	.benefits-list li {
+		padding: 10px 10px 10px 10px;
+	}
+}
+
+@media (max-width: 390px) {
+	.benefits-container {
+		max-width: 280px;
+	}
+}
+
+/* scrollbar for the benefits section */
+#benefits ::-webkit-scrollbar {
+	height: 8px;
+}
+
+#benefits ::-webkit-scrollbar-track {
+	background: #444;
+	border-radius: 30px;
+}
+
+#benefits ::-webkit-scrollbar-thumb {
+	background: #ccc;
+	width: 70px;
+	border-radius: 30px;
+}
+
+#benefits ::-webkit-scrollbar-thumb:hover {
+	background: white;
+}
+
+
+
