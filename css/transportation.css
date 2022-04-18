@@ -2,6 +2,13 @@
 	--bright: #ffcc3f;
 	--green: #344E41;
 	--blue: #38A3A5;
+
+	/*new colors*/
+	--darkBlue: #85CBCC;
+	--lightBlue: #A8DEE0;
+	--paleOrange: #F9E2AE;
+	--brightOrange: #FBC78D;
+	--brightGreen: #A7D676;
 }
 
 body {
@@ -11,7 +18,7 @@ body {
 #bike-background {
 	width: 100vw;
 	height: 100vh;
-	background-image: url("../tree-bg.jpg");
+	background-image: url("../new-treebg.jpg");
 	background-size: contain;
 	background-repeat: repeat-x;
   animation: slide 60s linear infinite;
@@ -49,8 +56,8 @@ body {
 }
 
 .bg-bright {
-	background-color: var(--bright);
-	color: var(--blue);
+	background-color: var(--brightOrange);
+	color: black;
 	padding: 4rem;
 }
 
@@ -78,10 +85,18 @@ img {
 	text-align: center;
 }
 
-svg {
-	display: block;
+.spacer {
+	aspect-ratio: 960/300;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-.upper {
-	background: var(--green);
+.layer1 {
+	background-image: url('../transport-wave.svg');
+}
+
+.footer {
+	background-color: var(--brightGreen);
 }
