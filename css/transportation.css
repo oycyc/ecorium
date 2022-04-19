@@ -18,7 +18,7 @@ body {
 #bike-background {
 	width: 100vw;
 	height: 100vh;
-	background-image: url("../new-treebg.jpg");
+	background-image: url("../treebg.jpg");
 	background-size: contain;
 	background-repeat: repeat-x;
   animation: slide 60s linear infinite;
@@ -34,6 +34,7 @@ body {
 }
 
 #tag {
+	color: #333;
 	font-weight: 700;
 	font-size: 5rem;
 	margin-top: 3em;
@@ -44,6 +45,12 @@ body {
 @media screen and (max-width: 800px) { /* breakpoint of when the image starts to not correspond with aspect ratio */
 	#bike-background {
 		background-size: cover;
+	}
+
+	#tag {
+		font-size: 4rem;
+		margin-top: 4em;
+		margin-bottom: 0;
 	}
 
 	.split {
@@ -94,15 +101,64 @@ img {
 }
 
 .layer1 {
-	background-image: url('../transport-wave.svg');
+	background-image: url('../greenOrange-wave.svg');
 }
 
+
+/*FOOTER SECTION*/
 .footer {
 	background-color: var(--brightGreen);
 	padding: 4rem;
 }
 
 .container {
-	background-color: green;
 	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 33%;
+	padding: 1em;
+}
+
+h4 {
+	font-size: 2.5rem;
+	margin-bottom: 1.8rem;
+	position: relative;
+}
+
+ul li:not(:last-child) {
+	margin-bottom: .75em;
+}
+
+ul li a {
+	font-size: 1em;
+	font-weight: 300;
+	display: block;
+}
+
+ul li a:hover {
+	color: #333;
+	padding-left: .5em;
+}
+
+@media screen and (max-width: 800px) {
+	h4 {
+		font-size: 1.5rem;
+	}
+	ul li a {
+		font-size: .8em;
+	}
+	.footer-col{
+		width: 50%;
+	}
 }
