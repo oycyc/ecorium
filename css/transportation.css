@@ -99,4 +99,10 @@ img {
 
 .footer {
 	background-color: var(--brightGreen);
+	padding: 4rem;
+}
+
+.container {
+	background-color: green;
+	margin: auto;
 }
