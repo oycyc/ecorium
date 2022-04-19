@@ -161,7 +161,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background-image: url(../tree-bg.jpg);
+    background-image: url(../treebg.jpg);
     background-repeat: repeat;
     background-size: contain;
     -webkit-background-clip: text;
@@ -686,24 +686,24 @@
 }
 
 .carousel-item--1 .carousel-item-image{
-  background-image: url('../tree-bg.jpg');
+  background-image: url('../treebg.jpg');
 }
 
 
 .carousel-item--2 .carousel-item-image{
-    background-image: url('../tree-bg.jpg');
+    background-image: url('../treebg.jpg');
 }
 
 .carousel-item--3 .carousel-item-image{
-    background-image: url('../tree-bg.jpg');
+    background-image: url('../treebg.jpg');
 }
 
 .carousel-item--4 .carousel-item-image{
-    background-image: url('../tree-bg.jpg');
+    background-image: url('../treebg.jpg');
 }
 
 .carousel-item--5 .carousel-item-image{
-    background-image: url('../tree-bg.jpg');
+    background-image: url('../treebg.jpg');
 }
 
 
@@ -1009,4 +1009,34 @@
 }
 
 
-
+/* scroll video animation */
+.intro{
+    height: 100vh;
+  
+  }
+  
+  .intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .intro h1 {
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 80px;
+  }
+  
+  #testing123 {
+    height: 100vh;
+    color: black;
+  }
+  
+  #testing123 h1 {
+    padding-top: 300px;
+    text-align: center;
+    font-size: 80px;
+  }
