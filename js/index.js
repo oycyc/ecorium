@@ -1,6 +1,6 @@
-//
-// Did You Know Carousel
-//
+/*
+Did You Know Carousel
+*/
 
 // make the first carousel is always active
 document.getElementsByClassName('carousel-item')[0].classList.add('active');
@@ -35,19 +35,28 @@ function setSlide(prev, next) {
   document.getElementsByClassName('carousel-item')[slide].classList.add('active');
 };
 
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
 
+/*
+Scrolling Video Animation
+*/
 
-
-
-
-//
-// Scrolling Video Animation
-//
 const controller = new ScrollMagic.Controller();
+const accelerationAmount = 0.1; // video accelerating to scroll
 
 // First Video - Protect Our Home
 const videoContainer1 = document.getElementById("scrolling-vid-1");
 const video1 = videoContainer1.querySelector("video");
+// prevent a bug where user could click on the video, which will start/pause the video (even with video controls removed)
+// the video plays, so the video.currentTime increases, and it will not match correct proper scrollPosition calculated time
+// ScrollMagic, in an attempt to correct the video.currentTime, will create a glitch affect, going back and forth by 0.1 second
+video1.pause(); // set paused on default, 'autoplay' is needed in html for mobile devices that doesn't load video frames w/o being played (this video is technically always paused, only progressed through the use of video.currentTime)
+video1.addEventListener("click", (event) => {
+  event.preventDefault();
+  video1.pause();
+});
+
 const video1Text = videoContainer1.querySelector("h1");
 
 let video1Scene = new ScrollMagic.Scene({
@@ -70,26 +79,31 @@ let video1TextScene = new ScrollMagic.Scene({
   .addTo(controller);
 
 //Video Animation
-let accelamount = 0.1;
-let scrollpos = 0;
-let delay = 0;
+let video1ScrollPos = 0;
+let video1Delay = 0;
 
 video1Scene.on("progress", function (event) {
   // console.log("Scene progress changed to " + event.progress);
-  scrollpos = video1.duration * event.progress;
+  video1ScrollPos = video1.duration * event.progress;
 });
 
 setInterval(() => {
-  delay += (scrollpos - delay) * accelamount;
-  video1.currentTime = delay;
+  video1Delay += (video1ScrollPos - video1Delay) * accelerationAmount;
+  video1.currentTime = video1Delay;
 }, 33.3);
-
-
 
 
 // Second Video - Don't Let This Happen 
 const videoContainer2 = document.getElementById("scrolling-vid-2");
 const video2 = videoContainer2.querySelector("video");
+// prevent a bug where user could click on the video, which will start/pause the video (even with video controls removed)
+// the video plays, so the video.currentTime increases, and it will not match correct proper scrollPosition calculated time
+// ScrollMagic, in an attempt to correct the video.currentTime, will create a glitch affect, going back and forth by 0.1 second
+video2.pause(); // set paused on default, 'autoplay' is needed in html for mobile devices that doesn't load video frames w/o being played (this video is technically always paused, only progressed through the use of video.currentTime)
+video2.addEventListener("click", (event) => {
+  event.preventDefault();
+  video2.pause();
+});
 const video2Text = videoContainer2.querySelector("h1");
 
 
@@ -113,7 +127,7 @@ let video2TextScene = new ScrollMagic.Scene({
   .addTo(controller);
 
 //Video Animation
-let accelamount2 = 0.1;
+let accelerationAmount2 = 0.1;
 let scrollpos2 = 0;
 let delay2 = 0;
 
@@ -123,6 +137,9 @@ video2Scene.on("progress", function (event) {
 });
 
 setInterval(() => {
-  delay2 += (scrollpos2 - delay2) * accelamount2;
+  delay2 += (scrollpos2 - delay2) * accelerationAmount2;
   video2.currentTime = delay2;
 }, 33.3);
+
+
+
