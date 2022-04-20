@@ -1010,18 +1010,18 @@
 
 
 /* scroll video animation */
-.intro{
+.scrolling-vid-intro {
     height: 100vh;
   
   }
   
-  .intro video {
+  .scrolling-vid-intro video {
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
   
-  .intro h1 {
+  .scrolling-vid-intro h1 {
     color: white;
     top: 50%;
     left: 50%;
@@ -1030,12 +1030,12 @@
     font-size: 80px;
   }
   
-  #testing123 {
+  #post-video {
     height: 100vh;
     color: black;
   }
   
-  #testing123 h1 {
+  #post-video h1 {
     padding-top: 300px;
     text-align: center;
     font-size: 80px;

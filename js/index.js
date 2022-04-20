@@ -1,5 +1,8 @@
-// carousel
+//
+// Did You Know Carousel
+//
 
+// make the first carousel is always active
 document.getElementsByClassName('carousel-item')[0].classList.add('active');
 let total =  document.getElementsByClassName('carousel-item').length;
 let current = 0;
@@ -22,6 +25,7 @@ function setSlide(prev, next) {
     slide = 0;
     current = 0;
   }
+
   if (next < 0) {
     slide = total - 1;
     current = total - 1;
@@ -29,47 +33,38 @@ function setSlide(prev, next) {
 
   document.getElementsByClassName('carousel-item')[prev].classList.remove('active');
   document.getElementsByClassName('carousel-item')[slide].classList.add('active');
-  setTimeout(function() {
+};
 
-  }, 800);
+//
+// Scrolling Video Animation
+//
 
-
-
-  console.log('current ' + current);
-  console.log('prev ' + prev);
-}
-
-
-
-
-
-// scrolling video animation
-const intro = document.querySelector(".intro");
-const video = intro.querySelector("video");
-const text = intro.querySelector("h1");
-//END SECTION
-const section = document.getElementById("testing123");
-const end = section.querySelector("h1");
+const videoIntro = document.querySelector(".scrolling-vid-intro");
+const video = videoIntro.querySelector("video");
+const videoIntroText = videoIntro.querySelector("h1");
+// ending 
+const postVideo = document.getElementById("post-video");
+const postVideoText = postVideo.querySelector("h1");
 
 //SCROLLMAGIC
 const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 9000,
-  triggerElement: intro,
+  duration: 8500,
+  triggerElement: videoIntro,
   triggerHook: 0
 })
   .addIndicators()
-  .setPin(intro)
+  .setPin(videoIntro)
   .addTo(controller);
 
 //Text Animation
-const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
+const textAnim = TweenMax.fromTo(videoIntroText, 3, { opacity: 1 }, { opacity: 0 });
 
 let scene2 = new ScrollMagic.Scene({
-  duration: 3000,
-  triggerElement: intro,
+  duration: 4000,
+  triggerElement: videoIntro,
   triggerHook: 0
 })
   .setTween(textAnim)
@@ -85,11 +80,6 @@ scene.on("progress", function (event) {
   scrollpos = video.duration * event.progress;
 });
 
-scene.on("update", e => {
-  // console.log(e);
-  // scrollpos = e.scrollPos / 1000;
-  console.log(scrollpos);
-});
 
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
