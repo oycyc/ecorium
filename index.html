@@ -136,13 +136,22 @@
     </section>
 
     <section id="our-mission">
-
-      <div class="drop-shadow">
-         <div class="glass"></div>
-         <div class="our-mission-text" style="width: calc(100% - 10em);">
-            <h1>Our Mission</h1>
-            <p>Testing test font size is indeed too big</p>
-         </span>
+            <!-- Canvas -->
+      <canvas class="orb-canvas"></canvas>
+      <!-- Overlay -->
+      <div class="overlay">
+         <!-- Overlay inner wrapper -->
+         <div class="overlay__inner">
+            <!-- Title -->
+            <h1 class="overlay__title">
+               <span class="text-gradient">Our Mission</span>
+            </h1>
+            <!-- Description -->
+            <p class="overlay__description">
+               testing testing testing testing!
+            </p>
+            
+         </div>
       </div>
 
 
@@ -320,7 +329,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js" integrity="sha512-jbTBHn1aXqglu6As1bUWxdPYc9b1uMHtreBM30oW3HbNFDS/eO1n+f98l4qcmw2l7CAdjWSbu3wVjm9SKISOaw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" type="module"></script>
     <script src="./js/script.js" async defer></script>
   </body>
 </html>
