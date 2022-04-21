@@ -336,7 +336,7 @@ let scrollpos2 = 0;
 let delay2 = 0;
 
 video2Scene.on("progress", function (event) {
-  console.log("Scene progress changed to " + event.progress);
+  // console.log("Scene progress changed to " + event.progress);
   scrollpos2 = video2.duration * event.progress;
 });
 
