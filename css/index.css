@@ -430,7 +430,7 @@
   --our-mission-baseColor: hsl(89, 95%, 50%); 
   --our-mission-bg-gradient: linear-gradient(
       to bottom,
-      hsl(89, 95%, 99%),
+      hsl(0, 0%, 100%),
       hsl(89, 95%, 84%)
   );
 }
@@ -569,7 +569,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 130vh; 
+    height: 100vh; 
     margin-top: 2.5rem;
 }
 
@@ -619,6 +619,13 @@
     line-height: 1.75rem; 
     font-weight: 500; 
 }
+
+@media (max-height: 700px) { 
+    #did-you-know {
+        height: 132vh;
+    }
+}
+
 
 @media (min-width: 640px) { 
     .upper-subtitle {
@@ -855,7 +862,7 @@
 	justify-content: center;
 	width: 100%;
 	max-width: 1000px;
-	min-height: 100vh;
+	min-height: 50vh;
 }
 
 @counter-style symbols {
@@ -989,6 +996,13 @@
 }
 
 
+@media (max-height: 700px) {
+    .benefits-container {
+        min-height: 70vh;
+    }
+}
+
+
 @media (max-width: 1090px) {
 	.benefits-container {
 		max-width: 920px;
@@ -1083,6 +1097,7 @@
     transform: translate(-50%, -50%);
     position: absolute;
     font-size: 80px;
+    text-align: center;
 }
 
 #scrolling-vid-2 {
@@ -1102,12 +1117,14 @@
     transform: translate(-50%, -50%);
     position: absolute;
     font-size: 80px;
+    text-align: center;
 }
 
 /* cta */
 
 #cta {
     line-height: 2.6rem;
+    margin-top: 5rem;
 }
 
 #cta h1 {
@@ -1134,25 +1151,21 @@
     flex-basis: 30%;
     overflow: hidden;
     position: relative;
-    /* margin-right: -32px; */
     text-align: right;
 }
 .cta-image-1--desktop {
     max-width: 100%;
     height: auto;
     position: relative;
-    right: 30px;
 }
 .cta-image-1--tablet {
     max-width: 108%;
     height: auto;
-    margin-left: -27px;
 }
 .cta-image-2 img {
     max-width: 100%;
     height: auto;
     position: relative;
-    left: 38px;
 }
 .cta-heading {
     flex-basis: 39%;
@@ -1179,11 +1192,15 @@
 .cta-bottom-media {
     position: relative;
     display: flex;
-    width: 100%;
     justify-content: center;
+    top: -7.5rem;
 }
 
-
+@media only screen and (max-width: 1450px) {
+    .cta-bottom-media {
+        top: 0;
+    }
+}
 
 @media only screen and (max-width: 820px) {
     #cta h1 {
