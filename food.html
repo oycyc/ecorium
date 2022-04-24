@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Food & Eating | Ecorium</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./css/shared.css">
+<link rel="stylesheet" href="./css/food.css">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="./favicon.png">
+
+
+</head>
+<body>
+
+    <section id="hero">
+        <div class="nav-div">
+            <div class="header">
+               <a href="index.html">
+                  <img src="./assets/navbar/flaticon-temp-logo.png" id="logo" />
+                  <h1>Ecorium</h1>
+               </a>
+    
+               <nav id="navbar-main">
+               <ul>
+                  <li>
+                     <a href="index.html" class="nav-text active">
+                     <span>00</span> HOME
+                     </a>
+                  </li>
+                  <li>
+                     <a href="" class="nav-text"> <span>01</span> JIAQI </a>
+                  </li>
+                  <li>
+                     <a href="" class="nav-text"> <span>02</span> IS </a>
+                  </li>
+                  <li>
+                     <a href="" class="nav-text"> <span>03</span> GORGEOUS </a>
+                  </li>
+               </ul>
+               </nav>
+               <button id="nav-toggle">
+               <img src="./assets/navbar/icon-hamburger.svg" />
+               </button>
+            </div>
+         </div>
+
+
+
+
+        <div class="hero-container">
+          <div class="hero-image-1">
+              <!-- insert lottie file images here! -->
+              <!-- change size of the tablet/mobile image, it is too big! -->
+            <img src="vehicles.png" class="hero-image-1--desktop" alt="">
+            <img src="vehicles.png" class="hero-image-1--tablet" alt="">
+          </div>
+     
+          <div class="hero-heading">
+            <h1>Food & Eating on Climate!</h1>
+            <p class="hero-subtext">Did you know that your eating habits have an impact on climate change? Learn more about the effects of meat, dairy, seafood, and produce, as well as how to avoid food waste.</p>
+
+            <div class="hero-btns">
+                <!-- make only one button, change to look good! -->
+              <button>Learn More</button>
+              <button>Take Action</button>
+            </div>
+          </div>
+     
+          <div class="hero-image-2">
+            <img src="vehicles.png" alt="">
+          </div>
+        </div>
+     
+      </section>
+       
+
+
+
+<!-- make these images more round border radius or use svg image morphs -->
+<div class="scroll-wrapper" id="js-wrapper">
+	<div class="all-slides" id="js-slideContainer">
+		<section class="slide-container">
+			<span class="slide-image-container" id="image1">
+				<img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+			</span>
+            <span id="trigger--image1"></span>
+		</section>
+		<section class="slide-container">
+			<span class="slide-image-container" id="image2">
+                <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+            </span>
+          <span id="trigger--image2"></span>
+		</section>
+		<section class="slide-container">
+			<span class="slide-image-container" id="image3">
+                <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+            </span>
+            <span id="trigger--image3"></span>
+		</section>
+		<section class="slide-container">
+			<span class="slide-image-container" id="image4">
+                <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+            </span>
+            <span id="trigger--image4"></span>
+		</section>
+        <section class="slide-container">
+			<span class="slide-image-container" id="image5">
+                <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+            </span>
+            <span id="trigger--image5"></span>
+		</section>
+	</div>
+</div>
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/animation.gsap.js'></script>
+<script  src="./js/food.js"></script>
+
+</body>
+</html>
