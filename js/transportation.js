@@ -6,24 +6,27 @@ const colors = {
   brightGreen: "#A7D676"
 }
 
+Chart.defaults.font.family = "'Josefin Sans', sans-serif"
+
 //avatars on top of bars
 //one for each bar
-const img1 = new Image();
-img1.src = './favicon.png'
-const img2 = new Image();
-img2.src = './favicon.png'
-const img3 = new Image();
-img3.src = './renewable.png'
-const img4 = new Image();
-img4.src = './favicon.png'
-const img5 = new Image();
-img5.src = './treebg.jpg'
+const wind = new Image();
+wind.src = './wind-turbine.png'
+const hydropower = new Image();
+hydropower.src = './hydro-power.png'
+const solar = new Image();
+solar.src = './solar.png'
+const biomass = new Image();
+biomass.src = './biomass.png'
+const geothermal = new Image();
+geothermal.src = './geothermal-energy.png'
 
 const myChart = document.getElementById('myChart').getContext('2d');
 
 //barAvatar Plugin Block
-const dataPoints = [9.2, 6.3, 2.8, 1.3, 0.4];
-const avatarArray = [img1, img2, img3, img4, img5];
+const dataPoints = [0.4, 1.3, 2.8, 6.3, 9.2];
+const avatarArray = [geothermal, biomass, solar, hydropower, wind];
+
 
 const barAvatar = {
   id: 'barAvatar',
@@ -43,22 +46,26 @@ const barAvatar = {
 const barChart = new Chart(myChart, {
   type: 'bar', //bar, horizontalBar, pie, line, doughnut, radar, polarArea
   data: {
-    labels:['Wind', 'Hydropower', 'Solar', 'Biomass', 'Geothermal'],
+    labels:['Geothermal', 'Biomass', 'Solar', 'Hydropower', 'Wind'],
     datasets:[{
       label:'Shares of total electricity production in 2021',
       data: dataPoints,
       backgroundColor: [
-        colors.lightBlue,
-        colors.darkBlue,
-        colors.brightOrange,
+        colors.paleOrange,
         colors.brightGreen,
-        colors.paleOrange
+        colors.brightOrange,
+        colors.darkBlue,
+        colors.lightBlue
       ],
       borderWidth:1,
       borderColor: '#333',
     }]
   },
   options:{
+    maintainAspectRatio: false,
+    layout: {
+      padding: 30
+    },
     plugins: {
       legend: {
         display: false
@@ -70,8 +77,16 @@ const barChart = new Chart(myChart, {
           callback: function (value) {
             return value + "%";
           }
+        },
+        grid: {
+          display: false
+        },
+      },
+      x: {
+        grid: {
+        display: false
         }
-      }
+      },
     },
   },
   plugins: [barAvatar]
