@@ -1,0 +1,192 @@
+.comparison-container {
+	display: flex; 
+	padding-left: 2rem;
+	padding-right: 2rem; 
+	margin-top: 3rem; 
+    margin-left: auto;
+    margin-right: auto;
+	display: flex; 
+	flex-direction: column; 
+	max-width: 80rem; 
+}
+
+/* add round edges and box shadow to edges of images */
+.comparison-container img { 
+ 	border-radius: 0.5rem; 
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+    max-width: 100%;
+    height: auto;
+}
+
+.comparison-heading {
+	position: relative;
+}
+
+.comparison-heading h2 {
+	font-size: 1.875rem;
+	line-height: 2.25rem; 
+	font-weight: 700; 
+	text-align: center; 
+	width: 100%; 
+}
+
+.comparison-heading p {
+	padding-top: 2rem;
+	padding-bottom: 2rem; 
+	margin-top: -0.5rem; 
+	color: #374151; 
+	font-size: 1.125rem;
+	line-height: 1.75rem; 
+	text-align: center; 
+	width: 100%; 
+}
+
+.comparison-item {
+	display: flex; 
+	margin-bottom: 2rem; 
+	flex-direction: column; 
+}
+
+.comparison-image-end {
+	display: flex; 
+	margin-bottom: 2rem;  
+	align-items: center; 
+}
+
+.comparison-image-start {
+	display: flex; 
+	margin-bottom: 2rem;  
+	align-items: center; 
+}
+
+.comparison-text {
+	display: flex; 
+	margin-top: 1.25rem; 
+	margin-bottom: 2rem; 
+	flex-direction: column; 
+	justify-content: center; 
+}
+
+.comparison-text h3 {
+	margin-top: 0.5rem; 
+	font-size: 1.5rem;
+	line-height: 2rem; 
+}
+
+.comparison-text p {
+	margin-top: 1.25rem; 
+	color: #374151; 
+	font-size: 1.125rem;
+	line-height: 1.75rem; 
+}
+
+.comparison-list-container {
+	padding: 0; 
+	margin: 0; 
+	line-height: 1.5rem; 
+	list-style: none
+}
+
+.comparison-list-item {
+	position: relative; 
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem; 
+	padding-left: 0; 
+	text-align: left; 
+}
+
+.comparison-list-text {
+	margin-right: 0.5rem; 
+	background-color: #FCD34D; 
+	color: #ffffff; 
+	display: inline-flex; 
+	justify-content: center; 
+	align-items: center; 
+	width: 1.5rem; 
+	height: 1.5rem; 
+	border-radius: 9999px; 
+}
+
+.comparison-list-icon {
+	font-size: 0.875rem;
+	line-height: 1.25rem; 
+	font-weight: 700; 
+}
+
+@media (min-width: 640px) { 
+	.comparison-heading h2 {
+		font-size: 2.25rem;
+		line-height: 2.5rem; 
+	}
+
+	.comparison-heading p {
+		max-width: 48rem;
+	}
+
+	.comparison-item {
+		flex-direction: row;
+	}
+
+	.comparison-image-end {
+		order: 9999;
+		width: 50%;
+	}
+
+	.comparison-image-start {
+		width: 50%;
+	}
+
+	.comparison-text {
+		padding-right: 4rem; 
+		width: 50%; 		
+	}
+
+	.comparison-text-left {
+		padding-left: 4rem;
+		padding-right: 0;
+	}
+
+	.comparison-text h3 {
+		text-align: left;
+	}
+}
+
+@media (min-width: 768px) { 
+	.comparison-heading h2 {
+		font-size: 3rem;
+		line-height: 1; 
+	}
+
+	.comparison-image-end {
+		width: 42.5%;
+	}
+
+	.comparison-image-start {
+		width: 42.5%;
+	}
+
+	.comparison-text {
+		margin-top: 0;
+		width: 58.5%;
+	}
+
+	.comparison-text h3 {
+		font-size: 2.25rem;
+		line-height: 2.5rem; 
+	}
+
+	.comparison-text p {
+		text-align: left;
+	}
+ }
+
+
+
+@media (min-width: 1280px) { 
+	.comparison-container {
+		padding-left: 3rem;
+		padding-right: 3rem; 
+	}
+
+}
+
