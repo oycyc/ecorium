@@ -10,16 +10,17 @@ Chart.defaults.font.family = "'Josefin Sans', sans-serif"
 
 //avatars on top of bars
 //one for each bar
+//gets the src from the html file because it makes the chart from there
 const wind = new Image();
-wind.src = './wind-turbine.png'
+wind.src = './assets/tpt-imgs/wind-turbine.png'
 const hydropower = new Image();
-hydropower.src = './hydro-power.png'
+hydropower.src = './assets/tpt-imgs/hydro-power.png'
 const solar = new Image();
-solar.src = './solar.png'
+solar.src = './assets/tpt-imgs/solar.png'
 const biomass = new Image();
-biomass.src = './biomass.png'
+biomass.src = './assets/tpt-imgs/biomass.png'
 const geothermal = new Image();
-geothermal.src = './geothermal-energy.png'
+geothermal.src = './assets/tpt-imgs/geothermal-energy.png'
 
 const myChart = document.getElementById('myChart').getContext('2d');
 
