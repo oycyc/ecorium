@@ -14,13 +14,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     new ScrollMagic.Scene({
       triggerElement: "#js-wrapper",
       triggerHook: "onLeave",
-      duration: "400%"
+      duration: "800%"
     })
       .setPin("#js-wrapper")
       .setTween(horizontalSlide)
       .addTo(controller);
-  
-  
   });
     
     

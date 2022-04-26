@@ -171,6 +171,11 @@ html {
   background: #03C9A9;
 }
 
+.slide-container:nth-child(6) {
+  background: #03C9A9;
+}
+
+
 .slide-image-container {
   position: absolute;
   top: 50%;
@@ -184,4 +189,31 @@ html {
   object-fit: cover;
   min-width: 60vw;
   padding: 0 5vw;
+}
+
+
+
+/* text after slider */
+#post-slider {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+  place-items: center;
+}
+
+#post-slider img {
+  height: 50vh;
+  width: auto;
+  object-fit: cover;
+}
+
+#post-slider h2 {
+  font-size: 2rem;
+  max-width: 500px;
+  text-align: center;
 }
