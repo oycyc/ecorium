@@ -76,6 +76,10 @@ body {
 	background-image: url('../greenOrange.svg');
 }
 
+.layer2 {
+	background-image: url('../orangeBlue.svg');
+}
+
 .text-center{
 	padding: 1rem;
 	font-size: 2rem;
@@ -352,53 +356,201 @@ ul li a:hover {
 }
 
 
-/*modal that i might use??*/
-.modal {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border:  1px solid black;
-	border-radius: 10px;
-	z-index: 10;
-	background-color: white;
-	width: 500px;
-	max-width: 80%;
+/*GAME THING*/
+#console {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background:
+    radial-gradient(circle, transparent 60%, black),
+    url('https://contentservice.mc.reyrey.net/image_v1.0.0/?id=8097126f-7f7e-50d6-84c8-23b5f024a58f&637828694651115487');
+  background-repeat: repeat-y;
+  background-size: 1000px 400px;
+  background-position: 50% 0px;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.5);
 }
 
-.modal-header {
-	padding: 10px 15px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid black;
+#console * {
+  user-select: none;
 }
 
-.modal-header .title {
-	font-size: 1.25rem;
-	font-weight: bold;
+#start_screen {
+  width: 300px;
+  padding: 1rem;
+  font-family: system-ui;
+  border-radius: 4px;
+  background: black;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-25%);
+  box-shadow: 0px 0px 0px 3px var(--pink);
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
-.modal-header .close-button {
-	cursor: pointer;
-	border: none;
-	outline: none;
-	background: none;
-	font-size: 1.25rem;
-	font-weight: bold;
+#start_screen p {
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 150%;
+}
+#start_screen p span {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: var(--aqua);
+  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 25% 100%);
 }
 
-.modal-body {
-	padding: 10px 15px;
+#game_vehicle {
+  width: 150px;
+  height: 150px;
+  background: 
+    url('https://contentservice.mc.reyrey.net/image_v1.0.0/?id=d51d755a-d1b6-5f2f-b5d1-c708680e3c00&637828640800545935');
+  background-size: contain;
+  position: absolute;
+  left: calc(50% - 75px);
+  bottom: 25px;  
+}
+.bounce {
+  animation: bounce 1s linear infinite;
+}
+@keyframes bounce {
+  50% { transform: scale(1.05); } 
 }
 
-#overlay {
-	position: fixed;
-	opacity: 0;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.5);
+.gauge,
+#speed {
+  width: 125px;
+  aspect-ratio: 1 / 1;  
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
+}
+.gauge:after {
+  content: '';
+  width: 50px;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: calc(50% - 50px);
+  border-radius: 100% 0 0 100%;
+  transform-origin: 100% 50%;  
+  clip-path: polygon(0% 50%, 50% 0%, 100% 0%, 100% 100%, 50% 100%);
 }
 
+#speed {
+  left: calc(50% - 85px);
+  top: 10px;
+  background: 
+    radial-gradient(circle at 50% 50%, white 7%, black 8%, black 45%, transparent 46%),
+    conic-gradient(var(--aqua) 10deg, var(--purple) 11deg 51deg, var(--pink) 90deg, transparent 91deg 270deg, var(--pink) 271deg, var(--purple) 301deg 349deg, var(--aqua) 350deg);
+  border: 3px solid black;
+  background-color: rgba(0,0,0,1);
+  backdrop-filter: blur(4px);
+  box-shadow:
+    0px 0 0 1px #333,
+    -10px 0 20px rgba(0,0,0,.5);
+}
+#speed:before {
+  content: 'MPG';
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 34px;
+  font-family: system-ui;
+  line-height: 100%;
+}
+
+#fuel {
+  left: calc(50% - 30px);
+  top: 10px;
+  background: 
+    radial-gradient(circle at 50% 70%, black 60%, transparent 51%),
+    conic-gradient(black 40deg 90deg, var(--pink) 90deg 270deg, var(--aqua) 360deg, black 360deg),    
+    red;
+  transform: rotate(235deg) scaleY(-1) scale(.8);
+  border: 3px solid black;
+  box-shadow: -10px 0 20px rgba(0,0,0,.5);
+}
+#fuel:before {
+  content: 'F'; 
+  filter: grayscale(1) contrast(200%);
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 70px;
+  top: 10px;
+  font-family: system-ui;
+  line-height: 100%;
+  transform: rotate(-125deg) scaleY(-1);
+}
+#fuel:after {
+  transform: var(--fuel);
+}
+
+#speed_needle {
+  width: 50px;
+  height: 5px;
+  background: 
+    white;
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: calc(50% - 50px);
+  transform-origin: 100% 50%;
+  transform: var(--speed);
+  pointer-events: none;
+  clip-path: polygon(0% 50%, 25% 0%, 100% 0%, 100% 100%, 25% 100%);
+}
+
+#travel_dist {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  font-family: system-ui;
+  font-weight: 100;
+  line-height: 100%;
+}
+
+#travel_dist span {
+  font-size: 12px;
+  display: block;
+}
+
+#countdown_box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 150px;
+  font-family: system-ui;
+  font-weight: 900;
+  line-height: 100%;
+  color: var(--aqua);
+  text-shadow: 3px 3px var(--pink);
+  display: var(--carDisplay);
+}
+
+.countdown_pulse {
+  animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+  50% { transform: translate(-50%,-50%) scale(1.1); }
+}
