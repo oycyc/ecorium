@@ -444,67 +444,7 @@ html {
   transform: scale(2) rotate(180deg);
   opacity: 0.1;
 }
-#article-section .main-article .gallery {
-  display: grid;
-  gap: 20px;
-  grid-template-areas: "img1 img1 img2 img3" "img1 img1 img4 img5";
-  min-height: 400px;
-  margin-top: 40px;
-}
-#article-section .main-article .gallery .image-item {
-  min-height: 200px;
-  background-color: #eee;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 8px;
-  transition: 250ms;
-}
-#article-section .main-article .gallery .image-item:hover {
-  opacity: 0.9;
-  cursor: pointer;
-}
-#article-section .main-article .gallery .image-1 {
-  grid-area: img1;
-}
-#article-section .main-article .gallery .image-2 {
-  grid-area: img2;
-}
-#article-section .main-article .gallery .image-3 {
-  grid-area: img3;
-}
-#article-section .main-article .gallery .image-4 {
-  grid-area: img4;
-}
-#article-section .main-article .gallery .image-5 {
-  grid-area: img5;
-}
-#article-section .main-article .gallery .gallery-mask {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100vw;
-  height: 100vh;
-  padding: 40px;
-  background-color: #22222288;
-  transition: 500ms;
-}
-#article-section .main-article .gallery .gallery-mask img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  transition: 500ms;
-}
-#article-section .main-article .gallery .mask-off {
-  visibility: hidden;
-  background-color: #22222200;
-}
-#article-section .main-article .gallery .mask-off img {
-  visibility: hidden;
-  opacity: 0;
-}
+
 
 @media screen and (max-width: 1024px) {
   #article-section {
@@ -514,9 +454,6 @@ html {
 }
 @media screen and (max-width: 768px) {
 
-  #article-section article .main-article .gallery {
-    grid-template-areas: "img1 img1" "img1 img1" "img2 img3" "img4 img5";
-  }
 }
 @media screen and (max-width: 425px) {
   #article-section {

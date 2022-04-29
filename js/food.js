@@ -148,23 +148,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // 	document.querySelector('.activeCard').previousElementSibling.classList.add('prevCard');
     
   
-
-// Handle Image Gallery Click for Article
-const galleryMask = document.querySelector(".gallery-mask");
-const maskImage = document.querySelector(".mask-image");
-const galleryImgs = document.querySelectorAll(".image-item");
-
-galleryMask.addEventListener("click", () => {
-	galleryMask.classList.add("mask-off");
-});
-
-galleryImgs.forEach((item) => {
-	item.addEventListener("click", () => {
-		let styleValue = item.getAttribute("style");
-		maskImage.setAttribute(
-			"src",
-			styleValue.slice(styleValue.indexOf(": url(") + 7, -3)
-		);
-		galleryMask.classList.remove("mask-off");
-	});
-});
