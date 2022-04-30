@@ -7,6 +7,13 @@
   --white: #fff;
   --hover-grey: #979797;
   --green-test: #3a5a40;
+
+  /*palette colors*/
+  --darkBlue: #85CBCC;
+  --lightBlue: #A8DEE0;
+  --paleOrange: #F9E2AE;
+  --brightOrange: #FBC78D;
+  --brightGreen: #A7D676;
 }
 
 /* Remove padding and margin */
