@@ -18,7 +18,7 @@ body {
 	overflow-x: hidden;
 }
 
-#bike-background {
+/*#bike-background {
 	width: 100vw;
 	height: 100vh;
 	background-image: url("../treebg.jpg");
@@ -44,22 +44,8 @@ body {
 	margin-bottom: 1em;
 	text-align: center;
 }
+*/
 
-@media screen and (max-width: 800px) { /* breakpoint of when the image starts to not correspond with aspect ratio */
-	#bike-background {
-		background-size: cover;
-	}
-
-	#tag {
-		font-size: 4rem;
-		margin-top: 4em;
-		margin-bottom: 0;
-	}
-
-	.bg-bright {
-		padding: 3rem;
-	}
-}
 
 .bg-bright {
 	background-color: var(--brightOrange);
