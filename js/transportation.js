@@ -147,7 +147,7 @@ function countdown(){
   var text = document.querySelector('#countdown_text')
   var secs = 3
 
-  function addNumber() {
+function addNumber() {
     // handle mpg meter
     if(run) {
       num++
@@ -167,8 +167,8 @@ function countdown(){
     }  
 
     // handle fuel meter
-    if(num > 80 && num < 100) {
-      fuel = fuel - 1
+    if(num > 75 && num < 105) {
+      fuel = fuel
     } else {
       fuel = fuel - 3
     }

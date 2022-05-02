@@ -67,7 +67,7 @@ body {
 }
 
 .layer1 {
-	background-image: url('../greenOrange.svg');
+	background-image: url('../blueOrange.svg');
 }
 
 .layer2 {
@@ -195,7 +195,7 @@ body {
 
 .comparison-list-text {
 	margin-right: 0.5rem; 
-	background-color: #FCD34D; 
+	background-color: var(--brightGreen); 
 	color: #ffffff; 
 	display: inline-flex; 
 	justify-content: center; 
@@ -211,7 +211,7 @@ body {
 	font-weight: 700; 
 }
 
-@media (min-width: 640px) { 
+@media (min-width: 870px) { 
 	.comparison-heading h2 {
 		font-size: 2.25rem;
 		line-height: 2.5rem; 
@@ -249,7 +249,7 @@ body {
 	}
 }
 
-@media (min-width: 768px) { 
+/*@media (min-width: 768px) { 
 	.comparison-heading h2 {
 		font-size: 3rem;
 		line-height: 1; 
@@ -279,7 +279,7 @@ body {
  }
 
 
-
+*/
 @media (min-width: 1280px) { 
 	.comparison-container {
 		padding-left: 3rem;
@@ -321,6 +321,17 @@ h4 {
 	position: relative;
 }
 
+.info {
+	position: relative;
+}
+
+.info li {
+	display: grid;
+	grid-template-columns: 30px 1fr;
+	margin-bottom: 16px;
+	gap: 20px;
+}
+
 ul li:not(:last-child) {
 	margin-bottom: .75em;
 }
@@ -333,7 +344,6 @@ ul li a {
 
 ul li a:hover {
 	color: #333;
-	padding-left: .5em;
 }
 
 @media screen and (max-width: 800px) {
@@ -445,7 +455,7 @@ ul li a:hover {
   top: 10px;
   background: 
     radial-gradient(circle at 50% 50%, white 7%, black 8%, black 45%, transparent 46%),
-    conic-gradient(var(--aqua) 10deg, var(--purple) 11deg 51deg, var(--pink) 90deg, transparent 91deg 270deg, var(--pink) 271deg, var(--purple) 301deg 349deg, var(--aqua) 350deg);
+    conic-gradient(var(--aqua) 20deg, var(--purple) 21deg 51deg, var(--pink) 90deg, transparent 91deg 270deg, var(--pink) 271deg, var(--purple) 301deg 339deg, var(--aqua) 340deg);
   border: 3px solid black;
   background-color: rgba(0,0,0,1);
   backdrop-filter: blur(4px);
@@ -464,6 +474,10 @@ ul li a:hover {
   top: 34px;
   font-family: system-ui;
   line-height: 100%;
+}
+
+#mileage {
+	text-align: center;
 }
 
 #fuel {
