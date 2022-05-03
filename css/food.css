@@ -345,11 +345,10 @@ html {
 
 #oneyear-stat .title,
 #oneyear-stat .cards {
-  width: 80vw;
   max-width: 64rem;
-  min-width: 58.9rem;
   margin: 0 auto;
 }
+
 @media screen and (max-width : 480px) {
   #oneyear-stat .title,
   #oneyear-stat .cards {
@@ -388,14 +387,10 @@ html {
 
 #oneyear-stat .cards {
   padding-top: 6rem;
+  padding-bottom: 6rem;
   display: flex;
   justify-content: space-between;
-}
-@media screen and (max-width : 480px) {
-  #oneyear-stat .cards {
-    flex-direction: column;
-    align-items: center;
-  }
+  align-items: center;
 }
 
 #oneyear-stat .card {
@@ -417,30 +412,49 @@ html {
     margin-bottom: 2rem;
   }
 }
-.card__svg-container {
+
+@media screen and (max-width : 480px) {
+  #oneyear-stat .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #oneyear-stat .cards {
+    flex-direction: column;
+  }
+
+  #oneyear-stat .card {
+    margin-bottom: 4rem;
+  }
+}
+
+
+.card-img-container {
   height: 50%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-.card__svg-wrapper {
+.card-img-wrapper {
   width: 8rem;
 }
-.card__count-container {
+.card-info-container {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card__count-text {
+.card-info-head {
   transform: translate(0, -0.5rem);
 }
-.card__count-text--big {
+.card-info-head--big {
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 300;
 }
-.card__stuff-container {
+.card-info-text {
   margin: 0 auto;
   width: 90%;
   height: 15%;
@@ -472,13 +486,4 @@ html {
   height: 5.625rem;
   transform: translate(1.5rem, 22.5rem);
   pointer-events: none;
-}
-.card--oil:after {
-  background-image: radial-gradient(ellipse at top, rgba(106, 122, 135, 0.5), transparent 70%);
-}
-.card--tree:after {
-  background-image: radial-gradient(ellipse at top, rgba(106, 191, 96, 0.5), transparent 70%);
-}
-.card--water:after {
-  background-image: radial-gradient(ellipse at top, rgba(96, 203, 231, 0.5), transparent 70%);
 }
