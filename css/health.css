@@ -115,7 +115,7 @@
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 }
 #polluted-countries .options .option:nth-child(1) {
-  --defaultBackground:#ED5565;
+  background: url(../assets/health/china-pollution.jpg);
 }
 #polluted-countries .options .option:nth-child(2) {
   --defaultBackground:#FC6E51;
@@ -220,3 +220,4 @@
 #polluted-countries .options .option .label .info .sub {
   transition-delay: 0.1s;
 }
+
