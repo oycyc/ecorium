@@ -5,8 +5,10 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 100vh;
+    min-height: 115vh;
     transition: 0.25s;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 .pollution-header {
@@ -30,9 +32,6 @@
     margin-right: auto;
 }
 
-.hidden-br {
-    display: none;
-}
 
 @media (min-width: 640px) { 
     .pollution-header {
@@ -67,6 +66,12 @@
     }
 }
 
+@media (min-width: 1650px) { 
+    #polluted-countries {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
 
 #polluted-countries .options {
   display: flex;
@@ -82,33 +87,21 @@
   #polluted-countries .options {
     min-width: 520px;
   }
-  /* #polluted-countries .options .option:nth-child(5) {
-    display: none;
-  } */
 }
 @media screen and (max-width: 638px) {
   #polluted-countries .options {
     min-width: 440px;
   }
-  /* #polluted-countries .options .option:nth-child(4) {
-    display: none;
-  } */
 }
 @media screen and (max-width: 558px) {
   #polluted-countries .options {
     min-width: 360px;
   }
-  /* #polluted-countries .options .option:nth-child(3) {
-    display: none;
-  } */
 }
 @media screen and (max-width: 478px) {
   #polluted-countries .options {
     min-width: 280px;
   }
-  /* #polluted-countries .options .option:nth-child(2) {
-    display: none;
-  } */
 }
 #polluted-countries .options .option {
   position: relative;
