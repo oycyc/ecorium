@@ -64,7 +64,6 @@ let video1Scene = new ScrollMagic.Scene({
   triggerElement: videoContainer1,
   triggerHook: 0
 })
-  .addIndicators() // for debugging
   .setPin(videoContainer1)
   .addTo(controller);
 
@@ -112,7 +111,6 @@ let video2Scene = new ScrollMagic.Scene({
   triggerElement: videoContainer2,
   triggerHook: 0
 })
-  .addIndicators() // for debugging
   .setPin(videoContainer2)
   .addTo(controller);
 
