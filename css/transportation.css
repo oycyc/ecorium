@@ -75,10 +75,13 @@ body {
 }
 
 .text-center{
+	margin: 1rem;
 	padding: 1rem;
 	font-size: 2rem;
 	text-align: center;
 	display: block;
+	color: #212121;
+	line-height: 1.2;
 }
 
 /*Styling for Bar Chart*/
@@ -118,17 +121,7 @@ body {
 	font-weight: 700; 
 	text-align: center; 
 	width: 100%; 
-}
-
-.comparison-heading p {
-	padding-top: 2rem;
-	padding-bottom: 2rem; 
-	margin-top: -0.5rem; 
-	color: #374151; 
-	font-size: 1.125rem;
-	line-height: 1.75rem; 
-	text-align: center; 
-	width: 100%; 
+	color: #000000;
 }
 
 .comparison-item {
@@ -139,7 +132,9 @@ body {
 
 .comparison-image-end {
 	display: flex; 
-	margin-bottom: 2rem;  
+	margin-bottom: 2rem; 
+	margin-left: 1em; 
+	margin: 0 1em 2rem;
 	align-items: center; 
 }
 
@@ -163,16 +158,18 @@ body {
 	margin-bottom: 2rem; 
 	flex-direction: column; 
 	justify-content: center; 
+	color: #212121;
 }
 
 .comparison-text h3 {
-	margin-top: 0.5rem; 
+	margin-top: 0.5rem;  
 	font-size: 1.5rem;
 	line-height: 2rem; 
 }
 
 .comparison-text p {
-	margin-top: 1.25rem; 
+	margin-top: 1.25rem;
+	margin-bottom: 1rem; 
 	color: #374151; 
 	font-size: 1.125rem;
 	line-height: 1.75rem; 
@@ -194,8 +191,8 @@ body {
 }
 
 .comparison-list-text {
-	margin-right: 0.5rem; 
-	background-color: var(--brightGreen); 
+	margin-right: 0.5rem;
+	background-color: var(--darkBlue); 
 	color: #ffffff; 
 	display: inline-flex; 
 	justify-content: center; 
@@ -213,7 +210,7 @@ body {
 
 @media (min-width: 870px) { 
 	.comparison-heading h2 {
-		font-size: 2.25rem;
+		font-size: 3rem;
 		line-height: 2.5rem; 
 	}
 
@@ -285,14 +282,13 @@ body {
 		padding-left: 3rem;
 		padding-right: 3rem; 
 	}
-
 }
 
 
 
 /*FOOTER SECTION*/
 .footer {
-	background-color: var(--brightGreen);
+	background-image: linear-gradient(to bottom right, var(--darkBlue), var(--paleOrange));
 	padding: 4rem;
 }
 
@@ -355,6 +351,9 @@ ul li a:hover {
 	}
 	.footer-col{
 		width: 50%;
+	}
+	.text-center {
+		font-size: 1.5rem;
 	}
 }
 
