@@ -440,7 +440,9 @@
   color: var(--color);
   
   display: grid;
-  grid-template: 'icon' 'title' 'content';
+  grid-template: 'icon' 'title';
+  justify-content: center;
+  align-items: center;
   row-gap: 0.5rem;
   column-gap: 2rem;
 }
@@ -474,13 +476,9 @@
   font-weight: 700;
   text-align: center;
 }
-.health-exposure-item .content{
-  grid-area: content;
-}
 
 @media (min-width: 30rem){
   .health-exposure-item {
-    grid-template: 'icon title' 'icon content';
     text-align: left;
   }
   .health-exposure-item .title { text-align: left }
