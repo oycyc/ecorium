@@ -5,8 +5,6 @@
 - beautify format all html css and js
 
 ### index.html
-- fix mobile navbar
-- would like another interactive/animation on the index.html
 
 ### food.html
 - make horizontal images more round border radius or use svg image morphs
