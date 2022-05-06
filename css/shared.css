@@ -57,9 +57,8 @@ a:visited {
 
 button.nav-text,
 li a.nav-text {
-  font-family: "Barlow Condensed";
   font-size: 16px;
-  letter-spacing: 2.7px;
+  letter-spacing: 1.7px;
   display: block;
   border-bottom: 2px solid transparent;
   transition: 0.25s;
@@ -73,10 +72,6 @@ li a.nav-text:hover {
 button.nav-text.active,
 li a.nav-text.active {
   border-bottom: 2px solid var(--green-test);
-}
-
-li a.nav-text span {
-  font-weight: bold;
 }
 
 /* Navbar styles */
@@ -171,9 +166,6 @@ li a.nav-text span {
   #navbar-main {
     padding: 0 24px;
   }
-  li a.nav-text span {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -266,9 +258,7 @@ li a.nav-text span {
     padding: 15px 0;
     border-bottom: none !important;
   }
-  li a.nav-text span {
-    display: inline;
-  }
+
   .header #nav-toggle {
     display: block;
   }
