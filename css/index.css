@@ -1237,22 +1237,6 @@
     text-align: center;
     margin: 46px 68px 0px 68px;
 }
-.cta-subtext {
-    margin-top: 34px;
-}
-.cta-btns {
-    margin-top: 32px;
-}
-
-.cta-btns button{
-    font-size: 1rem;
-    font-weight: 900;
-    border: none;
-    outline: none;
-    padding: 19px 36px;
-    border-radius: 29px;
-    cursor: pointer;
-}
 
 .cta-bottom-media {
     position: relative;
@@ -1312,11 +1296,10 @@
     .cta-heading {
     margin: 67px 24px 0px 24px;
     }
-    .cta-subtext {
-    font-size: 1rem;
-    line-height: 2.6rem;
-    margin-top: 24px;
-    }
+}
+
+.footer-top-margin {
+    margin-top: 500px;
 }
 
 .flowers-and-bees  {
