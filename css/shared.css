@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 /* maybe try some canva complimentary colors? */
 :root {
@@ -9,11 +9,11 @@
   --green-test: #3a5a40;
 
   /*palette colors*/
-  --darkBlue: #85CBCC;
-  --lightBlue: #A8DEE0;
-  --paleOrange: #F9E2AE;
-  --brightOrange: #FBC78D;
-  --brightGreen: #A7D676;
+  --darkBlue: #85cbcc;
+  --lightBlue: #a8dee0;
+  --paleOrange: #f9e2ae;
+  --brightOrange: #fbc78d;
+  --brightGreen: #a7d676;
 }
 
 /* Remove padding and margin */
@@ -27,7 +27,7 @@
 /* Set default body styles */
 body {
   font-size: 22px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /* Set default a tag styles */
@@ -48,10 +48,7 @@ html {
   body {
     font-size: 15px;
   }
-} 
-
-
-
+}
 
 /***************************
 ****************************
@@ -268,118 +265,115 @@ li a.nav-text.active {
   }
 }
 
-
-
-
 /*HERO*/
 #hero {
-    line-height: 2rem;
-    padding-bottom: 9rem;
-    background-color: var(--darkBlue);
+  line-height: 2rem;
+  padding-bottom: 9rem;
+  background-color: var(--darkBlue);
 }
 
 .hero-container h1 {
-    font-size: 4rem;
-    font-weight: 900;
-    line-height: 1;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1;
 }
 
 .hero-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .hero-image-1 {
-    flex-basis: 30%;
-    overflow: hidden;
-    position: relative;
+  flex-basis: 30%;
+  overflow: hidden;
+  position: relative;
 }
 .hero-image-1--tablet {
-    display: none;
+  display: none;
 }
 .hero-image-2 {
-    flex-basis: 30%;
-    overflow: hidden;
-    position: relative;
-    text-align: right;
+  flex-basis: 30%;
+  overflow: hidden;
+  position: relative;
+  text-align: right;
 }
 .hero-image-1--desktop {
-    max-width: 100%;
-    height: auto;
-    position: relative;
+  max-width: 100%;
+  height: auto;
+  position: relative;
 }
 .hero-image-1--tablet {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 108%;
-    height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 108%;
+  height: auto;
 }
 .hero-image-2 img {
-    max-width: 100%;
-    height: auto;
-    position: relative;
+  max-width: 100%;
+  height: auto;
+  position: relative;
 }
 .hero-heading {
-    flex-basis: 39%;
-    text-align: center;
-    margin: 46px 68px 0px 68px;
+  flex-basis: 39%;
+  text-align: center;
+  margin: 46px 68px 0px 68px;
 }
 .hero-subtext {
-    margin-top: 34px;
+  margin-top: 34px;
 }
 
 @media only screen and (max-width: 820px) {
-    .hero-container h1 {
+  .hero-container h1 {
     font-size: 3rem;
     padding: 0 20%;
-    }
-    .hero-container {
+  }
+  .hero-container {
     flex-direction: column;
-    }
-    .hero-image-1--desktop {
+  }
+  .hero-image-1--desktop {
     display: none;
-    }
-    .hero-image-1--tablet {
+  }
+  .hero-image-1--tablet {
     display: block;
-    }
-    .hero-image-2 {
+  }
+  .hero-image-2 {
     display: none;
-    }
-    .hero-heading {
+  }
+  .hero-heading {
     margin: 67px 125px 0px 125px;
-    }
+  }
 }
 
 @media only screen and (max-width: 620px) {
-    .hero-heading {
+  .hero-heading {
     margin: 67px 70px 0px 70px;
-    }
-    .hero-container h1 {
+  }
+  .hero-container h1 {
     font-size: 2.6rem;
-    }
+  }
 }
 
 @media only screen and (max-width: 475px) {
-    .hero-container h1 {
+  .hero-container h1 {
     font-size: 2.4rem;
     line-height: 4.4rem;
     padding: 0;
-    }
+  }
 
-    .hero-image-1--tablet {
+  .hero-image-1--tablet {
     max-width: 111%;
     margin-left: -20px;
-    }
-    .hero-heading {
+  }
+  .hero-heading {
     margin: 67px 24px 0px 24px;
-    }
-    .hero-subtext {
+  }
+  .hero-subtext {
     font-size: 1rem;
     line-height: 2.6rem;
     margin-top: 24px;
-    }
-} 
+  }
+}
 
 /* article details */
 #article-section {
@@ -388,7 +382,6 @@ li a.nav-text.active {
   width: 100%;
   padding: 100px;
   color: #222;
-
 }
 #article-section article {
   width: 100%;
@@ -407,9 +400,6 @@ li a.nav-text.active {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
-
 
 #article-section .main-article {
   width: 100%;
@@ -451,12 +441,10 @@ li a.nav-text.active {
   opacity: 0.1;
 }
 
-
 @media screen and (max-width: 1024px) {
   #article-section {
     padding: 50px;
   }
-
 }
 
 @media screen and (max-width: 425px) {
@@ -465,10 +453,13 @@ li a.nav-text.active {
   }
 }
 
-
 /*FOOTER SECTION*/
 .footer {
-  background-image: linear-gradient(to bottom right, var(--darkBlue), var(--paleOrange));
+  background-image: linear-gradient(
+    to bottom right,
+    var(--darkBlue),
+    var(--paleOrange)
+  );
   padding: 4rem;
 }
 
@@ -510,7 +501,7 @@ h4 {
 }
 
 ul li:not(:last-child) {
-  margin-bottom: .75em;
+  margin-bottom: 0.75em;
 }
 
 ul li a {
@@ -528,9 +519,9 @@ ul li a:hover {
     font-size: 1.5rem;
   }
   ul li a {
-    font-size: .8em;
+    font-size: 0.8em;
   }
-  .footer-col{
+  .footer-col {
     width: 100%;
   }
   .lottie {

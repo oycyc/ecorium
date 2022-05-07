@@ -1,76 +1,74 @@
-
 #polluted-countries {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    min-height: 115vh;
-    transition: 0.25s;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-height: 115vh;
+  transition: 0.25s;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .pollution-header {
-    margin-bottom: 1rem;  
-    font-size: 1.875rem;
-    line-height: 2.25rem; 
-    text-align: center; 
-    width: 100%; 
+  margin-bottom: 1rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  text-align: center;
+  width: 100%;
 }
 
 .pollution-header-text {
-    margin-bottom: 3rem; 
-    color: #374151; 
-    font-size: 1.125rem;
-    line-height: 1.75rem; 
-    font-weight: 300; 
-    text-align: center; 
-    width: 100%; 
-    max-width: 64rem;
-    margin-left: auto;
-    margin-right: auto;
+  margin-bottom: 3rem;
+  color: #374151;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-@media (min-width: 640px) { 
-    .pollution-header {
-        font-size: 2.25rem;
-        line-height: 2.5rem; 
-    }
+@media (min-width: 640px) {
+  .pollution-header {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
-@media (min-width: 768px) { 
-    .pollution-header {
-        text-align: center; 
-    }
+@media (min-width: 768px) {
+  .pollution-header {
+    text-align: center;
+  }
 
-    .pollution-header-text {
-        font-size: 1.25rem;
-        line-height: 1.75rem; 
-    }
+  .pollution-header-text {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 
-    .hidden-br {
-        display: block;
-    }
+  .hidden-br {
+    display: block;
+  }
 }
-@media (min-width: 1024px) { 
-    .pollution-header {
-        font-size: 3rem;
-        line-height: 1;
-    }
+@media (min-width: 1024px) {
+  .pollution-header {
+    font-size: 3rem;
+    line-height: 1;
+  }
 
-    .pollution-header-text {
-        font-size: 1.5rem;
-        line-height: 2rem; 
-    }
+  .pollution-header-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
-@media (min-width: 1650px) { 
-    #polluted-countries {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+@media (min-width: 1650px) {
+  #polluted-countries {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 #polluted-countries .options {
@@ -108,7 +106,7 @@
   overflow: hidden;
   min-width: 60px;
   margin: 10px;
-  background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+  background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
   background-size: auto 120%;
   background-position: center;
   cursor: pointer;
@@ -118,19 +116,19 @@
   background: url(../assets/health/china-pollution.jpg);
 }
 #polluted-countries .options .option:nth-child(2) {
-  --defaultBackground:#FC6E51;
+  --defaultBackground: #fc6e51;
 }
 #polluted-countries .options .option:nth-child(3) {
-  --defaultBackground:#FFCE54;
+  --defaultBackground: #ffce54;
 }
 #polluted-countries .options .option:nth-child(4) {
-  --defaultBackground:#2ECC71;
+  --defaultBackground: #2ecc71;
 }
 #polluted-countries .options .option:nth-child(5) {
-  --defaultBackground:#5D9CEC;
+  --defaultBackground: #5d9cec;
 }
 #polluted-countries .options .option:nth-child(6) {
-  --defaultBackground:#AC92EC;
+  --defaultBackground: #ac92ec;
 }
 #polluted-countries .options .option.active {
   flex-grow: 10000;
@@ -141,7 +139,8 @@
   background-size: auto 100%;
 }
 #polluted-countries .options .option.active .shadow {
-  box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+  box-shadow: inset 0 -120px 120px -120px black,
+    inset 0 -120px 120px -100px black;
 }
 #polluted-countries .options .option.active .label {
   bottom: 20px;
@@ -195,9 +194,9 @@
   color: var(--defaultBackground);
 }
 
-#polluted-countries .options .option .label .icon img{
-    width: 128px;
-    height: 100%;
+#polluted-countries .options .option .label .icon img {
+  width: 128px;
+  height: 100%;
 }
 
 #polluted-countries .options .option .label .info {
@@ -256,7 +255,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   transition: 500ms;
 }
 
@@ -273,34 +272,34 @@
 /* infographic at the bottom */
 #health-impact {
   padding-top: 5rem;
-  padding-bottom: 5rem; 
+  padding-bottom: 5rem;
 }
 
 .health-impact-container {
-  width: 100%; 
+  width: 100%;
   padding-left: 1rem;
-  padding-right: 1rem; 
+  padding-right: 1rem;
   padding-left: 2.5rem;
-  padding-right: 2.5rem; 
-  align-items: center; 
-  max-width: 72rem; 
+  padding-right: 2.5rem;
+  align-items: center;
+  max-width: 72rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .health-impact-wrapper {
   margin-left: -0.75rem;
-  margin-right: -0.75rem; 
-  display: flex; 
-  flex-wrap: wrap; 
-  align-items: center; 
+  margin-right: -0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .health-impact-wrapper-image {
   padding-left: 0.75rem;
-  padding-right: 0.75rem; 
-  order: 1; 
-  width: 100%; 
+  padding-right: 0.75rem;
+  order: 1;
+  width: 100%;
 }
 
 .health-impact-left {
@@ -308,39 +307,39 @@
 }
 
 .health-impact-left h2 {
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
   font-size: 1.875rem;
-  line-height: 2.25rem; 
-  font-weight: 700; 
-  letter-spacing: -0.025em; 
-  line-height: 1.25; 
+  line-height: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
 }
 
 .health-impact-item {
-  display: flex; 
+  display: flex;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem; 
-  margin-left: 1rem; 
-  display: flex; 
-  align-items: center; 
+  padding-bottom: 0.5rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .health-impact-item img {
-  width: 2rem; 
-  height: 2rem; 
+  width: 2rem;
+  height: 2rem;
   max-width: 100%;
 }
 
 .health-impact-left p {
-  margin-bottom: 1rem; 
-  letter-spacing: -0.025em; 
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
 }
 
 .health-impact-image {
   padding-left: 0.75rem;
-  padding-right: 0.75rem; 
-  margin-bottom: 3rem; 
-  width: 100%; 
+  padding-right: 0.75rem;
+  margin-bottom: 3rem;
+  width: 100%;
 }
 
 .health-impact-image img {
@@ -350,29 +349,28 @@
   height: auto;
 }
 
-@media (min-width: 640px) { 
+@media (min-width: 640px) {
   .health-impact-container {
     padding-left: 5rem;
-    padding-right: 5rem; 
+    padding-right: 5rem;
   }
-
 
   .health-impact-image img {
     max-width: 24rem;
   }
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .health-impact-container {
     padding-left: 8rem;
-    padding-right: 8rem; 
+    padding-right: 8rem;
   }
 }
 
-@media (min-width: 1024px) { 
+@media (min-width: 1024px) {
   .health-impact-container {
     padding-left: 4rem;
-    padding-right: 4rem; 
+    padding-right: 4rem;
   }
 
   .health-impact-wrapper-image {
@@ -384,9 +382,9 @@
   }
 
   .health-impact-image {
-    margin-bottom: 0; 
-    order: 1; 
-    width: 50%; 
+    margin-bottom: 0;
+    order: 1;
+    width: 50%;
   }
 
   .health-impact-image img {
@@ -394,10 +392,10 @@
   }
 }
 
-@media (min-width: 1280px) { 
+@media (min-width: 1280px) {
   .health-impact-left p {
     margin-bottom: 1.5rem;
-  } 
+  }
 
   .health-impact-item {
     padding-top: 0.75rem;
@@ -430,36 +428,47 @@
   display: grid;
   row-gap: 0.5rem;
 }
-.health-exposure-item{
+.health-exposure-item {
   position: relative;
   padding-block: 1.5rem;
   padding-inline: 2rem;
   background-color: var(--bg-color);
-  background-image: linear-gradient(to right, rgb(0 0 0 / .15), transparent);
+  background-image: linear-gradient(to right, rgb(0 0 0 / 0.15), transparent);
   transform-style: preserve-3d;
   color: var(--color);
-  
+
   display: grid;
-  grid-template: 'icon' 'title';
+  grid-template: "icon" "title";
   justify-content: center;
   align-items: center;
   row-gap: 0.5rem;
   column-gap: 2rem;
 }
-.health-exposure-item::before, .health-exposure-item::after {
+.health-exposure-item::before,
+.health-exposure-item::after {
   --side-rotate: 60deg;
   content: "";
   position: absolute;
   top: 0;
   height: 100%;
   width: 100%;
-  transform-origin: calc(50% - (50% * var(--ry))) 50%  ;
+  transform-origin: calc(50% - (50% * var(--ry))) 50%;
   transform: rotateY(calc(var(--side-rotate) * var(--ry)));
   background-color: inherit;
-  background-image: linear-gradient(calc(90deg * var(--ry)), rgb(0 0 0 / .25), rgb(0 0 0 / .5));  
+  background-image: linear-gradient(
+    calc(90deg * var(--ry)),
+    rgb(0 0 0 / 0.25),
+    rgb(0 0 0 / 0.5)
+  );
 }
-.health-exposure-item::before {--ry: -1; right: 100% }
-.health-exposure-item::after {--ry: 1; left: 100% }
+.health-exposure-item::before {
+  --ry: -1;
+  right: 100%;
+}
+.health-exposure-item::after {
+  --ry: 1;
+  left: 100%;
+}
 
 .health-exposure-item .icon {
   grid-area: icon;
@@ -471,15 +480,17 @@
   height: 6rem;
   max-height: 100%;
 }
-.health-exposure-item .title{
+.health-exposure-item .title {
   grid-area: title;
   font-weight: 700;
   text-align: center;
 }
 
-@media (min-width: 30rem){
+@media (min-width: 30rem) {
   .health-exposure-item {
     text-align: left;
   }
-  .health-exposure-item .title { text-align: left }
+  .health-exposure-item .title {
+    text-align: left;
+  }
 }

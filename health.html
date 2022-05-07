@@ -1,177 +1,294 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Health | Ecorium</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./css/shared.css">
-<link rel="stylesheet" href="./css/health.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Health | Ecorium</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/health.css" />
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/png" href="./favicon.png">
-
-
-</head>
-<body>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+  </head>
+  <body>
     <section id="hero">
       <div class="nav-div">
         <div class="header">
-           <a href="index.html">
-              <img src="./assets/navbar/flaticon-temp-logo.png" id="logo" />
-              <h1>Ecorium</h1>
-           </a>
+          <a href="index.html">
+            <img src="./assets/navbar/flaticon-temp-logo.png" id="logo" />
+            <h1>Ecorium</h1>
+          </a>
 
-           <nav id="navbar-main">
-           <ul>
+          <nav id="navbar-main">
+            <ul>
               <li>
-                 <a href="index.html" class="nav-text">HOME</a>
+                <a href="index.html" class="nav-text">HOME</a>
               </li>
               <li>
-                 <a href="./transportation.html" class="nav-text">TRANSPORTATION</a>
+                <a href="./transportation.html" class="nav-text"
+                  >TRANSPORTATION</a
+                >
               </li>
               <li>
-                 <a href="./food.html" class="nav-text">FOOD</a>
+                <a href="./food.html" class="nav-text">FOOD</a>
               </li>
               <li>
-                 <a href="./health.html" class="nav-text active">HEALTH</a>
+                <a href="./health.html" class="nav-text active">HEALTH</a>
               </li>
-           </ul>
-           </nav>
-           <button id="nav-toggle">
-           <img src="./assets/navbar/icon-hamburger.svg" />
-           </button>
+            </ul>
+          </nav>
+          <button id="nav-toggle">
+            <img src="./assets/navbar/icon-hamburger.svg" />
+          </button>
         </div>
-     </div>
+      </div>
 
+      <div class="hero-container">
+        <div class="hero-image-1">
+          <img
+            src="./assets/health/healthcare.png"
+            class="hero-image-1--desktop"
+            alt="healthcare"
+          />
+          <img
+            src="./assets/health/healthcare.png"
+            class="hero-image-1--tablet"
+            alt="healthcare"
+          />
+        </div>
 
+        <div class="hero-heading">
+          <h1>Health on Climate Change</h1>
+          <p class="hero-subtext">
+            Climate change is the single greatest hazard to humanity's health.
+            Climate change affects the social and environmental determinants of
+            health: clean air, safe drinking water, sufficient food and secure
+            shelter.
+          </p>
+        </div>
 
+        <div class="hero-image-2">
+          <img src="./assets/health/healthcare2.png" alt="healthcare" />
+        </div>
+      </div>
+    </section>
 
-        <div class="hero-container">
-          <div class="hero-image-1">
-            <img src="./assets/health/healthcare.png" class="hero-image-1--desktop" alt="healthcare">
-            <img src="./assets/health/healthcare.png" class="hero-image-1--tablet" alt="healthcare">
-          </div>
-     
-          <div class="hero-heading">
-            <h1>Health on Climate Change</h1>
-            <p class="hero-subtext">Climate change is the single greatest hazard to humanity's health. Climate change affects the social and environmental determinants of health: clean air, safe drinking water, sufficient food and secure shelter.</p>
-          </div>
-     
-          <div class="hero-image-2">
-            <img src="./assets/health/healthcare2.png" alt="healthcare">
+    <section id="polluted-countries">
+      <h2 class="pollution-header">Top Polluting Countries in the World</h2>
+      <p class="pollution-header-text">
+        The effects of world pollution accounts for about sixteen perfect of
+        deaths in the whole world. In the most affected countries, it accounts
+        for up to 1/4 of all deaths. Not only do pollution cause the rise of
+        temperature, they also cause droughts, rain shortages, and even
+        flooding. Not to mention, it affects lung development tremendously and
+        causes respiratory diseases like asthma.
+      </p>
+      <p class="pollution-header-text">
+        For reference and comparison, one million kiloton (1,000,000 kt) of
+        carbon dioxide emission has an equivalent emission to about 200 million
+        gasoline-powered passenger vehicles driven for one year, or 100 billion
+        gallons of gasoline consumed, or charging 100 <i>trillion</i> phones.
+        Now imagine countries like China with 10x as much footprint.
+      </p>
+
+      <div class="options">
+        <div
+          class="option active"
+          style="--optionBackground: url(../assets/health/china-pollution.jpg)"
+        >
+          <div class="shadow"></div>
+          <div class="label">
+            <div class="icon">
+              <img src="./assets/health/china.png" />
+            </div>
+            <div class="info">
+              <div class="main">China</div>
+              <div class="sub">
+                10.3 million kilotons of carbon dioxide emission
+              </div>
+            </div>
           </div>
         </div>
-     
-      </section>
 
-      <section id="polluted-countries">
-        <h2 class="pollution-header">Top Polluting Countries in the World</h2>
-        <p class="pollution-header-text">The effects of world pollution accounts for about sixteen perfect of deaths in the whole world. In the most affected countries, it accounts for up to 1/4 of all deaths. Not only do pollution cause the rise of temperature, they also cause droughts, rain shortages, and even flooding. Not to mention, it affects lung development tremendously and causes respiratory diseases like asthma.</p>
-        <p class="pollution-header-text">For reference and comparison, one million kiloton (1,000,000 kt) of carbon dioxide emission has an equivalent emission to about 200 million gasoline-powered passenger vehicles driven for one year, or 100 billion gallons of gasoline consumed, or charging 100 <i>trillion</i> phones. Now imagine countries like China with 10x as much footprint.</p>
-
-        <div class="options">
-           <div class="option active" style="--optionBackground:url(../assets/health/china-pollution.jpg);">
-              <div class="shadow"></div>
-              <div class="label">
-                 <div class="icon">
-                    <img src="./assets/health/china.png">
-                 </div>
-                 <div class="info">
-                    <div class="main">China</div>
-                    <div class="sub">10.3 million kilotons of carbon dioxide emission</div>
-                 </div>
+        <div
+          class="option"
+          style="--optionBackground: url(../assets/health/nyc-pollution.jpg)"
+        >
+          <div class="shadow"></div>
+          <div class="label">
+            <div class="icon">
+              <img src="./assets/health/united-states.png" />
+            </div>
+            <div class="info">
+              <div class="main">United States</div>
+              <div class="sub">
+                5.3 million kilotons of carbon dioxide emission
               </div>
-           </div>
-
-           <div class="option" style="--optionBackground:url(../assets/health/nyc-pollution.jpg);">
-              <div class="shadow"></div>
-              <div class="label">
-                 <div class="icon">
-                    <img src="./assets/health/united-states.png">
-                 </div>
-                 <div class="info">
-                    <div class="main">United States</div>
-                    <div class="sub">5.3 million kilotons of carbon dioxide emission</div>
-                 </div>
-              </div>
-           </div>
-
-           <div class="option" style="--optionBackground:url(../assets/health/india-pollution.jpg);">
-              <div class="shadow"></div>
-              <div class="label">
-                 <div class="icon">
-                    <img src="./assets/health/india.png">
-                 </div>
-                 <div class="info">
-                    <div class="main">India</div>
-                    <div class="sub">2.2 million kilotons of carbon dioxide emission</div>
-                 </div>
-              </div>
-           </div>
-
-           <div class="option" style="--optionBackground:url(../assets/health/russia-pollution.jpg);">
-              <div class="shadow"></div>
-              <div class="label">
-                 <div class="icon">
-                    <img src="./assets/health/russia.png">
-                 </div>
-                 <div class="info">
-                    <div class="main">Russia</div>
-                    <div class="sub">1.7 million kilotons of carbon dioxide emission</div>
-                 </div>
-              </div>
-           </div>
-
-           <div class="option" style="--optionBackground:url(../assets/health/japan-pollution.jpg);">
-              <div class="shadow"></div>
-              <div class="label">
-                 <div class="icon">
-                    <img src="./assets/health/japan.png">
-                 </div>
-                 <div class="info">
-                    <div class="main">Japan</div>
-                    <div class="sub">1.2 million kilotons of carbon dioxide emission</div>
-                 </div>
-              </div>
-           </div>
+            </div>
+          </div>
         </div>
-     
-     </section>
 
-     <section id="article-section">
+        <div
+          class="option"
+          style="--optionBackground: url(../assets/health/india-pollution.jpg)"
+        >
+          <div class="shadow"></div>
+          <div class="label">
+            <div class="icon">
+              <img src="./assets/health/india.png" />
+            </div>
+            <div class="info">
+              <div class="main">India</div>
+              <div class="sub">
+                2.2 million kilotons of carbon dioxide emission
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="option"
+          style="--optionBackground: url(../assets/health/russia-pollution.jpg)"
+        >
+          <div class="shadow"></div>
+          <div class="label">
+            <div class="icon">
+              <img src="./assets/health/russia.png" />
+            </div>
+            <div class="info">
+              <div class="main">Russia</div>
+              <div class="sub">
+                1.7 million kilotons of carbon dioxide emission
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="option"
+          style="--optionBackground: url(../assets/health/japan-pollution.jpg)"
+        >
+          <div class="shadow"></div>
+          <div class="label">
+            <div class="icon">
+              <img src="./assets/health/japan.png" />
+            </div>
+            <div class="info">
+              <div class="main">Japan</div>
+              <div class="sub">
+                1.2 million kilotons of carbon dioxide emission
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="article-section">
       <article>
-        <div class="article-heading" style="background-image: url('./assets/health/pollution-header-image.jpg');">
-        </div>
-    
+        <div
+          class="article-heading"
+          style="
+            background-image: url('./assets/health/pollution-header-image.jpg');
+          "
+        ></div>
 
         <section class="main-article">
           <h2>Climate - the Biggest Health Threat Facing Humanity</h2>
-          <p>Climate change is the single greatest hazard to humanity's health. Climate change affects the social and environmental determinants of health: clean air, safe drinking water, sufficient food and secure shelter. Air pollution, illness, harsh weather events, forced relocation, food shortages, and mental health challenges are already wreaking havoc on people's health. Environmental causes claim the lives of around 13 million people each year. The worldwide cost of implementing carbon mitigation measures would be almost half the value of health improvements from lowering carbon emissions. By 2050, meeting the Paris Agreement's targets may save roughly a million lives per year throughout the world due to reductions in air pollution alone. From 2030 to 2050, avoiding the worst climate impacts might help avert an extra 250,000 climate-related fatalities each year, primarily due to starvation, malaria, diarrhoea, and heat stress. That’s an extraordinary figure not to be taken lightly!</p>
-  
-          <h2>Health Risks</h2>
-          <p>Climate change is already having an impact on health in a variety of ways, including increased death and illness as a result of increasingly frequent extreme weather events such as heat waves, storms, and floods, food system disruption, an increase in zoonoses and diseases, and mental health issues. Furthermore, many of the social determinants of human health, such as livelihoods, equality, and access to health care, as well as social support networks, are being weakened by climate change. Women, children, ethnic minorities, poor communities, migrants or displaced individuals, elderly populations, and those with underlying health issues are among those who are disproportionately affected by climate-related health concerns.</p>
+          <p>
+            Climate change is the single greatest hazard to humanity's health.
+            Climate change affects the social and environmental determinants of
+            health: clean air, safe drinking water, sufficient food and secure
+            shelter. Air pollution, illness, harsh weather events, forced
+            relocation, food shortages, and mental health challenges are already
+            wreaking havoc on people's health. Environmental causes claim the
+            lives of around 13 million people each year. The worldwide cost of
+            implementing carbon mitigation measures would be almost half the
+            value of health improvements from lowering carbon emissions. By
+            2050, meeting the Paris Agreement's targets may save roughly a
+            million lives per year throughout the world due to reductions in air
+            pollution alone. From 2030 to 2050, avoiding the worst climate
+            impacts might help avert an extra 250,000 climate-related fatalities
+            each year, primarily due to starvation, malaria, diarrhoea, and heat
+            stress. That’s an extraordinary figure not to be taken lightly!
+          </p>
 
-          <p>It's truly a domino effect: climate change causes vulnerabilities like weather, poor air quality, water and food quality, etc. which causes medical conditions and takes a toll on our health systems and society.</p>
-  
+          <h2>Health Risks</h2>
+          <p>
+            Climate change is already having an impact on health in a variety of
+            ways, including increased death and illness as a result of
+            increasingly frequent extreme weather events such as heat waves,
+            storms, and floods, food system disruption, an increase in zoonoses
+            and diseases, and mental health issues. Furthermore, many of the
+            social determinants of human health, such as livelihoods, equality,
+            and access to health care, as well as social support networks, are
+            being weakened by climate change. Women, children, ethnic
+            minorities, poor communities, migrants or displaced individuals,
+            elderly populations, and those with underlying health issues are
+            among those who are disproportionately affected by climate-related
+            health concerns.
+          </p>
+
+          <p>
+            It's truly a domino effect: climate change causes vulnerabilities
+            like weather, poor air quality, water and food quality, etc. which
+            causes medical conditions and takes a toll on our health systems and
+            society.
+          </p>
+
           <h2>Health Inequities</h2>
-          <p>Health equity means that everyone has a fair and just opportunity to be as healthy as possible. This necessitates the removal of health-related barriers such as poverty, discrimination, and its repercussions, such as powerlessness and a lack of access to excellent employment with fair pay, quality education and housing, secure settings, and health care. However, this is hard to achieve and climate change exacerbates and worsens the existing problem. It impacts the most disadvantaged communities.</p>
-          <p>African American communities are one of the most affected by climate change in terms of health inequality. They have lower income, less education, and poorer health conditions due to discriminatory practices. This contributes to a high vulnerability to climate impact. For example, one in five African American families live in poverty, so during an extreme weather event, they may have less capability to mitigate, such as healthcare or air conditioning to prevent health issues in the first place.</p>
-  
+          <p>
+            Health equity means that everyone has a fair and just opportunity to
+            be as healthy as possible. This necessitates the removal of
+            health-related barriers such as poverty, discrimination, and its
+            repercussions, such as powerlessness and a lack of access to
+            excellent employment with fair pay, quality education and housing,
+            secure settings, and health care. However, this is hard to achieve
+            and climate change exacerbates and worsens the existing problem. It
+            impacts the most disadvantaged communities.
+          </p>
+          <p>
+            African American communities are one of the most affected by climate
+            change in terms of health inequality. They have lower income, less
+            education, and poorer health conditions due to discriminatory
+            practices. This contributes to a high vulnerability to climate
+            impact. For example, one in five African American families live in
+            poverty, so during an extreme weather event, they may have less
+            capability to mitigate, such as healthcare or air conditioning to
+            prevent health issues in the first place.
+          </p>
 
           <div class="health-article-image">
             <div class="image-mask mask-off">
-               <img class="image-mask-inner" alt="" >
+              <img class="image-mask-inner" alt="" />
             </div>
-            <div class="image-item" alt="" style="background-image: url('./assets/health/health-risk.webp');"></div>
-         </div>
+            <div
+              class="image-item"
+              alt=""
+              style="background-image: url('./assets/health/health-risk.webp')"
+            ></div>
+          </div>
 
-
-          <blockquote class="pullquote">"Climate change is intrinsically linked to public health, food and water security, migration, peace, and security. It is a moral issue. It is an issue of social justice, human rights and fundamental ethics. We have a profound responsibility to the fragile web of life on this Earth, and to this generation and
-            those that will follow."<br>&mdash; United Nations Secretary-General Ban Ki-moon</blockquote>
-         <blockquote class="pullquote">"This is not a partisan debate; it is a human one. Clean air and water, and a livable climate are inalienable human rights. And solving this crisis is not a question of politics. It is our moral obligation."<br>&mdash; Leonardo DiCaprio, Actor and United Nations Messenger of Peace</blockquote>
+          <blockquote class="pullquote">
+            "Climate change is intrinsically linked to public health, food and
+            water security, migration, peace, and security. It is a moral issue.
+            It is an issue of social justice, human rights and fundamental
+            ethics. We have a profound responsibility to the fragile web of life
+            on this Earth, and to this generation and those that will
+            follow."<br />&mdash; United Nations Secretary-General Ban Ki-moon
+          </blockquote>
+          <blockquote class="pullquote">
+            "This is not a partisan debate; it is a human one. Clean air and
+            water, and a livable climate are inalienable human rights. And
+            solving this crisis is not a question of politics. It is our moral
+            obligation."<br />&mdash; Leonardo DiCaprio, Actor and United
+            Nations Messenger of Peace
+          </blockquote>
         </section>
       </article>
     </section>
@@ -181,106 +298,167 @@
       <div class="health-impact-container">
         <div class="health-impact-wrapper">
           <div class="health-impact-wrapper-image">
-             
             <div class="health-impact-left">
               <h2>Impacts of Climate Change on Human Health</h2>
-              <p>Climate impacts our health tremendously. Climate creates change which causes exposure to poor health conditions and then causes illnesses/diseases. The following are climate impacts:</p>
+              <p>
+                Climate impacts our health tremendously. Climate creates change
+                which causes exposure to poor health conditions and then causes
+                illnesses/diseases. The following are climate impacts:
+              </p>
               <ul>
                 <li class="health-impact-item">
-                  <img src="./assets/health/hot-icon.png" alt="">
+                  <img src="./assets/health/hot-icon.png" alt="" />
                   <span>Rising Temperatures</span>
                 </li>
                 <li class="health-impact-item">
-                  <img src="./assets/health/hot-icon.png" alt="">
-                  <span >Extreme Weather</span>
+                  <img src="./assets/health/hot-icon.png" alt="" />
+                  <span>Extreme Weather</span>
                 </li>
                 <li class="health-impact-item">
-                  <img src="./assets/health/hot-icon.png" alt="">
+                  <img src="./assets/health/hot-icon.png" alt="" />
                   <span>Flooding & Rising Sea Levels</span>
                 </li>
 
                 <li class="health-impact-item">
-                  <img src="./assets/health/hot-icon.png" alt="">
+                  <img src="./assets/health/hot-icon.png" alt="" />
                   <span>More Diasters</span>
                 </li>
 
                 <li class="health-impact-item">
-                  <img src="./assets/health/hot-icon.png" alt="">
+                  <img src="./assets/health/hot-icon.png" alt="" />
                   <span>Climate Sensitive Diseases like Tick</span>
                 </li>
-
               </ul>
             </div>
-
           </div>
 
-          <div class="health-impact-image"><img src="./assets/health/contamination.png" alt=" image"></div>
+          <div class="health-impact-image">
+            <img src="./assets/health/contamination.png" alt=" image" />
+          </div>
         </div>
       </div>
     </section>
 
     <section id="health-exposure">
-      <h2 class="health-exposure-title">and those create poor conditions which causes health consequences.</h2>
+      <h2 class="health-exposure-title">
+        and those create poor conditions which causes health consequences.
+      </h2>
 
       <ul class="health-exposure-list">
-        <li class="health-exposure-item" style="--color:#ececec; --bg-color:#E98B43">
-          <div class="icon"><img src="./assets/health/heat-icon.png" alt="heat icon"></div>
-          <div class="title">Heat injuries, fatalities, cardiovascular failure</div>
+        <li
+          class="health-exposure-item"
+          style="--color: #ececec; --bg-color: #e98b43"
+        >
+          <div class="icon">
+            <img src="./assets/health/heat-icon.png" alt="heat icon" />
+          </div>
+          <div class="title">
+            Heat injuries, fatalities, cardiovascular failure
+          </div>
         </li>
-        <li class="health-exposure-item" style="--color:#ececec; --bg-color:#C23D2A">
-          <div class="icon"><img src="./assets/health/cough-icon.png" alt="coughing icon"></div>
-          <div class="title">Asthma, respiratory issues, increased allergies, unhealthy air quality</div>
+        <li
+          class="health-exposure-item"
+          style="--color: #ececec; --bg-color: #c23d2a"
+        >
+          <div class="icon">
+            <img src="./assets/health/cough-icon.png" alt="coughing icon" />
+          </div>
+          <div class="title">
+            Asthma, respiratory issues, increased allergies, unhealthy air
+            quality
+          </div>
         </li>
-        <li class="health-exposure-item" style="--color:#ececec; --bg-color:#842C2A">
-          <div class="icon"><img src="./assets/health/mosquito-icon.png" alt="mosquito icon"></div>
-          <div class="title">Malaria, dengue, encephalitis, hantavirus, Rift Valley fever, Lyme disease, chikungunya, West Nile Virus, Ticks</div>
+        <li
+          class="health-exposure-item"
+          style="--color: #ececec; --bg-color: #842c2a"
+        >
+          <div class="icon">
+            <img src="./assets/health/mosquito-icon.png" alt="mosquito icon" />
+          </div>
+          <div class="title">
+            Malaria, dengue, encephalitis, hantavirus, Rift Valley fever, Lyme
+            disease, chikungunya, West Nile Virus, Ticks
+          </div>
         </li>
-        <li class="health-exposure-item" style="--color:#ececec; --bg-color:#022F46">
-          <div class="icon"><img src="./assets/health/dirty-icon.png" alt="dirty water icon"></div>
-          <div class="title">Poor water quality, cholera, cryptosporidiosis, campylobacter, leptospirosis, algal blooms, malnutrition, diarrhea</div>
+        <li
+          class="health-exposure-item"
+          style="--color: #ececec; --bg-color: #022f46"
+        >
+          <div class="icon">
+            <img src="./assets/health/dirty-icon.png" alt="dirty water icon" />
+          </div>
+          <div class="title">
+            Poor water quality, cholera, cryptosporidiosis, campylobacter,
+            leptospirosis, algal blooms, malnutrition, diarrhea
+          </div>
         </li>
       </ul>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-
-        <div class="container">
-          <div class="row">
-            <div class="footer-col lottie">
-              <lottie-player autoplay src="https://assets4.lottiefiles.com/private_files/lf30_bwykk9xb.json"  background="transparent"  speed="1" loop></lottie-player>
-            </div>
-            <div class="footer-col">
-              <h4>Links</h4>
-              <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="https://docs.google.com/document/d/13aUa3rgf0bKOus2Zt0R9GnatWv37cA0jXkFn-RuuwOk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Sources</a></li> <!-- prevent phishing known as tabnabbing. -->
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Get in Touch</h4>
-              <ul class="info">
-                <li>
-                  <span><img src="./assets/email.png" class="icon"></span>
-                  <p><a href="mailto:yangciouou@gmail.com">yangciouou@gmail.com</a><br>
-                  <a href="mailto:jqshao12@gmail.com">jqshao12@gmail.com</a></p>
-                </li>
-                <li>
-                  <span><img src="./assets/github.png" class="icon"></span>
-                  <p><a href="https://github.com/oycyc" target="_blank" rel="noopener noreferrer">oycyc</a><br>
-                  <a href="https://github.com/jqshao" target="_blank" rel="noopener noreferrer">jqshao</a></p>
-                </li>
-              </ul>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col lottie">
+            <lottie-player
+              autoplay
+              src="https://assets4.lottiefiles.com/private_files/lf30_bwykk9xb.json"
+              background="transparent"
+              speed="1"
+              loop
+            ></lottie-player>
+          </div>
+          <div class="footer-col">
+            <h4>Links</h4>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li>
+                <a
+                  href="https://docs.google.com/document/d/13aUa3rgf0bKOus2Zt0R9GnatWv37cA0jXkFn-RuuwOk/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Sources</a
+                >
+              </li>
+              <!-- prevent phishing known as tabnabbing. -->
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get in Touch</h4>
+            <ul class="info">
+              <li>
+                <span><img src="./assets/email.png" class="icon" /></span>
+                <p>
+                  <a href="mailto:yangciouou@gmail.com">yangciouou@gmail.com</a
+                  ><br />
+                  <a href="mailto:jqshao12@gmail.com">jqshao12@gmail.com</a>
+                </p>
+              </li>
+              <li>
+                <span><img src="./assets/github.png" class="icon" /></span>
+                <p>
+                  <a
+                    href="https://github.com/oycyc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >oycyc</a
+                  ><br />
+                  <a
+                    href="https://github.com/jqshao"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >jqshao</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
-
+      </div>
     </footer>
 
-
-
-<script  src="./js/health.js"></script>
-<script  src="./js/script.js"></script>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-</body>
+    <script src="./js/health.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
 </html>

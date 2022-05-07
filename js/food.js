@@ -1,27 +1,23 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function (event) {
+  var controller = new ScrollMagic.Controller();
 
-    var controller = new ScrollMagic.Controller();
-  
-    var horizontalSlide = new TimelineMax()
+  var horizontalSlide = new TimelineMax()
     // animate panels
-    .to("#js-slideContainer", 1,   {x: "-20%"}) 
-    .to("#js-slideContainer", 1,   {x: "-40%"})
-    .to("#js-slideContainer", 1,   {x: "-60%"})
-    .to("#js-slideContainer", 1,   {x: "-80%"})
-  
-  
-    // create scene to pin and link animation
-    new ScrollMagic.Scene({
-      triggerElement: "#js-wrapper",
-      triggerHook: "onLeave",
-      duration: "800%"
-    })
-      .setPin("#js-wrapper")
-      .setTween(horizontalSlide)
-      .addTo(controller);
+    .to("#js-slideContainer", 1, { x: "-20%" })
+    .to("#js-slideContainer", 1, { x: "-40%" })
+    .to("#js-slideContainer", 1, { x: "-60%" })
+    .to("#js-slideContainer", 1, { x: "-80%" });
+
+  // create scene to pin and link animation
+  new ScrollMagic.Scene({
+    triggerElement: "#js-wrapper",
+    triggerHook: "onLeave",
+    duration: "800%",
+  })
+    .setPin("#js-wrapper")
+    .setTween(horizontalSlide)
+    .addTo(controller);
 });
-
-
 
 // Food Carousel
 
@@ -91,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 // })(jQuery);
 
-
 // function getWidth(el) {
 //   const styles = window.getComputedStyle(el);
 //   const width = el.offsetWidth;
@@ -104,14 +99,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 // const slideCount = document.getElementsByClassName('canvas').length;
 
-
 // for (let i = 1; i <= slideCount; i++) {
 // 	let paginationDot = document.createElement("div");
 // 	paginationDot.classList.add("dot");
 // 	document.querySelector('.pagination-dot-container').appendChild(paginationDot);
 // }
 // document.querySelector('.dot').classList.add('selected');
-
 
 // // Build Carousel
 // let dot = 0;
@@ -145,8 +138,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // 		}
 // 	}
 
-
-
 // 	document.querySelector('.activeCard').previousElementSibling.classList.add('prevCard');
-    
-  

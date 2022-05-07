@@ -1,89 +1,91 @@
 :root {
-    --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-    --colorShadeA: rgb(106, 163, 137);
-    --colorShadeB: rgb(121, 186, 156);
-    --colorShadeC: rgb(150, 232, 195);
-    --colorShadeD: rgb(187, 232, 211);
-    --colorShadeE: rgb(205, 255, 232);
-    --darkBlue: #85CBCC;
-    --lightBlue: #A8DEE0;
-    --paleOrange: #F9E2AE;
-    --brightOrange: #FBC78D;
-    --brightGreen: #A7D676;
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --colorShadeA: rgb(106, 163, 137);
+  --colorShadeB: rgb(121, 186, 156);
+  --colorShadeC: rgb(150, 232, 195);
+  --colorShadeD: rgb(187, 232, 211);
+  --colorShadeE: rgb(205, 255, 232);
+  --darkBlue: #85cbcc;
+  --lightBlue: #a8dee0;
+  --paleOrange: #f9e2ae;
+  --brightOrange: #fbc78d;
+  --brightGreen: #a7d676;
 }
 
 .gradient-text {
-    background: var(--gradient-text);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-.section-padding {
-    padding: 4rem 12rem;
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-
+.section-padding {
+  padding: 4rem 12rem;
+}
 
 #hero {
-    background-color: #ffcfdf;
-    background-image: linear-gradient(315deg, var(--brightGreen) 0%, var(--darkBlue) 74%);
+  background-color: #ffcfdf;
+  background-image: linear-gradient(
+    315deg,
+    var(--brightGreen) 0%,
+    var(--darkBlue) 74%
+  );
 }
 
 #hero-container {
-    display: flex;
+  display: flex;
 }
 
 #hero-container-text {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    margin-right: 5rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-right: 5rem;
 }
 
 #hero-container-text h1 {
-    font-weight: 800;
-    font-size: 62px;
-    line-height: 75px;
-    letter-spacing: -0.04em;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
 }
 
 #hero-container-text p {
-    font-size: 20px;
-    line-height: 27px;
-    color: var(--color-text);
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--color-text);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .big-button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: var(--colorShadeA);
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: inherit;
-    padding: 1em 2em;
-    border: 2px solid var(--colorShadeA);
-    border-radius: 1em;
-    background: var(--colorShadeE);
-    transform-style: preserve-3d;
-    transition: all 175ms cubic-bezier(0, 0, 1, 1);
-  }
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--colorShadeA);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: inherit;
+  padding: 1em 2em;
+  border: 2px solid var(--colorShadeA);
+  border-radius: 1em;
+  background: var(--colorShadeE);
+  transform-style: preserve-3d;
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
 .big-button::before {
   position: absolute;
   content: "";
@@ -119,74 +121,68 @@
   box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
 }
 
-
 #hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 #main-image {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 1386px) {
-    .section-padding {
-        padding: 4rem 9rem;
-    }
-
+  .section-padding {
+    padding: 4rem 9rem;
+  }
 }
 
-
 @media only screen and (max-width: 1200px) {
-    .section-padding {
-        padding: 4rem 6rem;
-    }
+  .section-padding {
+    padding: 4rem 6rem;
+  }
 }
 
 @media screen and (max-width: 1050px) {
-    #hero-container {
-        flex-direction: column;
-    }
+  #hero-container {
+    flex-direction: column;
+  }
 
-    #hero-container-text {
-        margin: 0 0 3rem;
-        text-align: center;
-    }
+  #hero-container-text {
+    margin: 0 0 3rem;
+    text-align: center;
+  }
 
-    .section-padding {
-        padding: 4rem 6rem;
-    }
+  .section-padding {
+    padding: 4rem 6rem;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    #hero-container h1 {
-        font-size: 48px;
-        line-height: 60px;
-    }
+  #hero-container h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
 
-    #hero-container p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
+  #hero-container p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
-
 @media screen and (max-width: 490px) {
-    #hero-container h1 {
-        font-size: 36px;
-        line-height: 48px;
-    }
+  #hero-container h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
 
-    #hero-container p {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
+  #hero-container p {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 /* #test-div {
@@ -197,310 +193,310 @@
     z-index: 10; 
 } */
 
-
-
-
-
-
 /* Areas of Impact Categories */
 #category-heading-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
 }
 
 #category-heading-container p {
-    max-width: 60ch;
-    text-align: center;
-    font-weight: 400;
-    line-height: 1.5;
+  max-width: 60ch;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 #category-heading {
-    position: relative;
-    font-size: 6.25vw;
-    white-space: nowrap;
+  position: relative;
+  font-size: 6.25vw;
+  white-space: nowrap;
 }
 
 #category-heading::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-image: url(../assets/treebg.jpg);
-    background-repeat: repeat;
-    background-size: contain;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-right: 2px solid #034225;
-    overflow: hidden;
-    animation: category-heading-animation 12s linear infinite;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-image: url(../assets/treebg.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-right: 2px solid #034225;
+  overflow: hidden;
+  animation: category-heading-animation 12s linear infinite;
 }
 
 @keyframes category-heading-animation {
-    0%, 10%, 100% {
-        width: 0;
-    }
-    
-    70%, 90% {
-        width: 100%;
-    }
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  70%,
+  90% {
+    width: 100%;
+  }
 }
 
 #categories {
-    padding-left: 1rem;
-    padding-right: 1rem; 
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem; 
-    margin-top: 2.5rem; 
-    max-width: 80rem; 
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  max-width: 80rem;
 }
 
 .category-block {
-    display: flex; 
-    overflow: hidden; 
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem; 
-    background-image: linear-gradient(315deg, var(--brightGreen) 0%, var(--lightBlue) 74%);
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    height: 100%; 
-    border-radius: 0.75rem;
+  display: flex;
+  overflow: hidden;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-image: linear-gradient(
+    315deg,
+    var(--brightGreen) 0%,
+    var(--lightBlue) 74%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  border-radius: 0.75rem;
 }
 
 .category-block-margin {
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 
-.category-text-left{
-    display: flex; 
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem; 
-    padding-right: 4rem; 
-    padding-left: 4rem; 
-    margin-bottom: 2.5rem; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    width: 100%; 
-    height: 100%;
+.category-text-left {
+  display: flex;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  margin-bottom: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .category-text-left h2 {
-    display: inline-block; 
-    padding-bottom: 0.5rem; 
-    font-size: 3rem;
-    line-height: 1; 
-    font-weight: 700; 
-    line-height: 1.25;
-    text-align: center; 
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
 }
 
 .category-text-left h3 {
-    color: #333; 
-    font-size: 3rem;
-    line-height: 1; 
-    font-weight: 700; 
-    line-height: 1; 
+  color: #333;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .category-block p {
-    margin-top: 2rem;
-    margin-bottom: 2rem; 
-    color: #212121; 
-    text-align: center; 
-    max-width: 24rem; 
-    opacity: 0.75; 
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #212121;
+  text-align: center;
+  max-width: 24rem;
+  opacity: 0.75;
 }
 
 .category-image-right {
-    display: flex; 
-    overflow: hidden; 
-    padding-left: 1.5rem; 
-    justify-content: flex-end; 
-    width: 100%; 
+  display: flex;
+  overflow: hidden;
+  padding-left: 1.5rem;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .category-image-left {
-    display: flex; 
-    overflow: hidden; 
-    padding-right: 1.5rem;  
-    justify-content: flex-start; 
-    width: 100%; 
+  display: flex;
+  overflow: hidden;
+  padding-right: 1.5rem;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .category-image-right img,
 .category-image-left img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .category-text-right {
-    display: flex; 
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem; 
-    padding-right: 3rem; 
-    padding-left: 4rem; 
-    margin-bottom: 2.5rem; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    width: 100%; 
-    height: 100%; 
+  display: flex;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-right: 3rem;
+  padding-left: 4rem;
+  margin-bottom: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .category-text-right h2 {
-    display: inline-block; 
-    padding-bottom: 0.5rem; 
-    font-size: 3rem;
-    line-height: 1; 
-    font-weight: 700; 
-    line-height: 1.25; 
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .category-text-right h3 {
-    color: #333;; 
-    font-size: 3rem;
-    line-height: 1; 
-    font-weight: 700; 
-    line-height: 1; 
+  color: #333;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .learn-more {
-    background-color: var(--brightOrange);
-    color: #AAABAA;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; 
-    padding-left: 1.5rem;
-    padding-right: 1.5rem; 
+  background-color: var(--brightOrange);
+  color: #aaabaa;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  border-width: 2px;
+  border-color: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .category-text-left h2 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .category-text-left h3 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  #category-heading {
+    font-size: 5.75vw;
+  }
+
+  #categories {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
+
+  .category-block {
+    flex-direction: row;
+  }
+
+  .category-text-left {
+    padding-left: 2.5rem;
+    margin-bottom: 0;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  .category-text-left h2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .category-block p {
+    text-align: left;
+    max-width: none;
+  }
+
+  .category-image-right {
+    padding-left: 0;
+    width: 50%;
+  }
+
+  .category-image-left {
+    padding-right: 0;
+    width: 50%;
+  }
+
+  .category-text-right {
+    padding-left: 4rem;
+    margin-bottom: 0;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  .category-text-right h2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .category-text-left {
+    padding-right: 2.5rem;
+    padding-left: 4rem;
+  }
+
+  .category-text-left h2 {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: unset;
+  }
+
+  .category-text-left h3 {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .category-block p {
     font-size: 1.125rem;
-    line-height: 1.75rem; 
-    font-weight: 500; 
-    border-radius: 9999px; 
-    border-width: 2px; 
-    border-color: #ffffff; 
+    line-height: 1.75rem;
+  }
+
+  .category-text-right {
+    padding-left: 2.5rem;
+    padding-right: 3rem;
+  }
+
+  .category-text-right h3 {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }
 
-@media (min-width: 640px) { 
-    .category-text-left h2 {
-        font-size: 3.75rem;
-        line-height: 1; 
-    }
-
-    .category-text-left h3 {
-        font-size: 3.75rem;
-        line-height: 1;  
-    }
-}
-
-@media (min-width: 768px) { 
-    #category-heading {
-        font-size: 5.75vw;
-    }
-
-    #categories {
-        padding-left: 6.5rem;
-        padding-right: 6.5rem; 
-    }
-
-    .category-block { 
-        flex-direction: row; 
-    }
-    
-    .category-text-left {
-        padding-left: 2.5rem; 
-        margin-bottom: 0; 
-        align-items: flex-start; 
-        width: 50%; 
-    }
-
-    .category-text-left h2 {
-        margin-left: 0;
-        margin-right: 0; 
-    }
-
-    .category-block p {
-        text-align: left; 
-        max-width: none; 
-    }
-
-    .category-image-right {
-        padding-left: 0; 
-        width: 50%; 
-    }
-
-    .category-image-left {
-        padding-right: 0; 
-        width: 50%; 
-    }
-
-    .category-text-right {
-        padding-left: 4rem; 
-        margin-bottom: 0; 
-        align-items: flex-start; 
-        width: 50%; 
-    }
-
-    .category-text-right h2 {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-}
-
-@media (min-width: 1024px) { 
-
-    .category-text-left {
-        padding-right: 2.5rem; 
-        padding-left: 4rem;
-    }
-
-    .category-text-left h2 {
-        margin-left: 0;
-        margin-right: 0; 
-        text-align: unset;
-    }
-
-    .category-text-left h3 {
-        font-size: 4.5rem;
-        line-height: 1; 
-    }
-
-    .category-block p {
-        font-size: 1.125rem;
-        line-height: 1.75rem; 
-    }
-
-    .category-text-right {
-        padding-left: 2.5rem; 
-        padding-right: 3rem; 
-    }
-
-    .category-text-right h3 {
-        font-size: 4.5rem;
-        line-height: 1; 
-    }
-}
-
-@media (min-width: 2000px) { 
-    #category-heading {
-        font-size: 4vw;
-    }
+@media (min-width: 2000px) {
+  #category-heading {
+    font-size: 4vw;
+  }
 }
 
 /* Our Mission Section */
 
 :root {
   --dark-color: hsl(89, 100%, 9%);
-  --our-mission-baseColor: hsl(89, 95%, 50%); 
+  --our-mission-baseColor: hsl(89, 95%, 50%);
 }
 
 #our-mission {
@@ -509,9 +505,12 @@
   place-items: center;
   padding: 2rem;
   color: var(--dark-color);
-  background: linear-gradient(to bottom, var(--brightOrange), var(--brightGreen));
+  background: linear-gradient(
+    to bottom,
+    var(--brightOrange),
+    var(--brightGreen)
+  );
 }
-
 
 .overlay {
   width: 100%;
@@ -554,7 +553,6 @@
   margin-bottom: 3rem;
 }
 
-
 #our-mission a {
   text-decoration: none;
   color: var(--dark-color);
@@ -565,7 +563,6 @@
   align-items: center;
 }
 
-
 @media only screen and (max-width: 1140px) {
   .overlay {
     padding: 8rem 4rem;
@@ -573,9 +570,9 @@
 }
 
 @media only screen and (max-width: 840px) {
-    #our-mission {
-        padding: 1.5rem;
-    }
+  #our-mission {
+    padding: 1.5rem;
+  }
 
   .overlay {
     padding: 4rem;
@@ -601,138 +598,114 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* did you know section */
 
-
 #did-you-know {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100vh; 
-    margin-top: 2.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  margin-top: 2.5rem;
 }
 
 .dyk-heading-container {
-    max-width: 72rem; 
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dyk-heading {
-    display: flex; 
-    padding-right: 2rem; 
-    text-align: center; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    width: 100%; 
-    max-width: 42rem; 
-    height: 100%; 
+  display: flex;
+  padding-right: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 42rem;
+  height: 100%;
 }
 
 .upper-subtitle {
-    margin-bottom: 1.25rem; 
-    color: #6366F1; 
-    font-size: 0.875rem;
-    line-height: 1.25rem; 
-    font-weight: 500; 
-    letter-spacing: -0.025em; 
-    text-transform: uppercase; 
+  margin-bottom: 1.25rem;
+  color: #6366f1;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
 }
 
 .dyk-title {
-    color: #111827; 
-    font-size: 3rem;
-    line-height: 1; 
-    font-weight: 800; 
-    letter-spacing: -0.025em; 
-    line-height: 2.5rem; 
+  color: #111827;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 2.5rem;
 }
 
 .bottom-subtitle {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem; 
-    color: #6B7280; 
-    font-size: 1.25rem;
-    line-height: 1.75rem; 
-    font-weight: 500; 
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #6b7280;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
 }
 
-@media (max-height: 700px) { 
-    #did-you-know {
-        height: 132vh;
-    }
+@media (max-height: 700px) {
+  #did-you-know {
+    height: 132vh;
+  }
 }
 
+@media (min-width: 640px) {
+  .upper-subtitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 
-@media (min-width: 640px) { 
-    .upper-subtitle {
-        font-size: 1rem;
-        line-height: 1.5rem; 
-    }
+  .dyk-title {
+    line-height: 1;
+  }
+}
 
-    .dyk-title {
-        line-height: 1; 
-    }
- }
-
- @media (min-width: 768px) { 
-     .dyk-title {
-        font-size: 3.75rem;
-        line-height: 1; 
-     }
-   }
+@media (min-width: 768px) {
+  .dyk-title {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
 
 .carousel {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    max-width: 900px;
-    max-height: 550px;   
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  max-width: 900px;
+  max-height: 550px;
+  overflow: hidden;
+  position: relative;
 }
 
 .carousel-item {
-  visibility:visible;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: flex-end;
-      -webkit-align-items: center;
-    -webkit-justify-content: flex-end;
-    position: relative;
-    background-color: #fff;
-    flex-shrink: 0;
-   -webkit-flex-shrink: 0;
-    position: absolute;
-    z-index: 0;
+  visibility: visible;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-end;
+  position: relative;
+  background-color: #fff;
+  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  position: absolute;
+  z-index: 0;
   transition: 0.6s all linear;
 }
 
@@ -741,566 +714,561 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
-    display: -webkit-flex;
+
+  display: -webkit-flex;
   -webkit-justify-content: center;
   -webkit-flex-direction: column;
-  
+
   order: 1;
   left: 0;
   margin: auto;
   padding: 0 40px;
   width: 40%;
-
 }
 
 .carousel-item-image {
-    width: 60%;
-    height: 100%;
-    order: 2;
-    align-self: flex-end;
-    flex-basis: 60%;
-  
-      -webkit-order: 2;
-    -webkit-align-self: flex-end;
-    -webkit-flex-basis: 60%;
-  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   position:relative;
+  width: 60%;
+  height: 100%;
+  order: 2;
+  align-self: flex-end;
+  flex-basis: 60%;
+
+  -webkit-order: 2;
+  -webkit-align-self: flex-end;
+  -webkit-flex-basis: 60%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   transform: translateX(100%);
   transition: 0.6s all ease-in-out;
 }
 
 .carousel-item-subtitle {
-    letter-spacing: 3px;
-    font-size: 10px;
-    text-transform: uppercase;
-    margin: 0;
-    color: #7E7E7E;    
-    font-weight: 700;
-    transform: translateY(25%);
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.4s all ease-in-out;
+  letter-spacing: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #7e7e7e;
+  font-weight: 700;
+  transform: translateY(25%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s all ease-in-out;
 }
 
 .carousel-item-title {
-    margin: 15px 0 0 0;
-    font-size: 44px;
-    line-height: 45px;
-    letter-spacing: 3px;
-    font-weight: 700;
-    color: #2C2C2C;
-    transform: translateY(25%);
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.6s all ease-in-out;
+  margin: 15px 0 0 0;
+  font-size: 44px;
+  line-height: 45px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #2c2c2c;
+  transform: translateY(25%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s all ease-in-out;
 }
 
 .carousel-item-description {
-    transform: translateY(25%);
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.6s all ease-in-out;
-    margin-top: 35px;
-    font-size: 13px;
-    color: #7e7e7e;
-    line-height: 22px;
-    margin-bottom: 35px;
+  transform: translateY(25%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s all ease-in-out;
+  margin-top: 35px;
+  font-size: 13px;
+  color: #7e7e7e;
+  line-height: 22px;
+  margin-bottom: 35px;
 }
 
-.carousel-item--1 .carousel-item-image{
-  background-image: url('../treebg.jpg');
+.carousel-item--1 .carousel-item-image {
+  background-image: url("../treebg.jpg");
 }
 
-
-.carousel-item--2 .carousel-item-image{
-    background-image: url('../treebg.jpg');
+.carousel-item--2 .carousel-item-image {
+  background-image: url("../treebg.jpg");
 }
 
-.carousel-item--3 .carousel-item-image{
-    background-image: url('../treebg.jpg');
+.carousel-item--3 .carousel-item-image {
+  background-image: url("../treebg.jpg");
 }
 
-.carousel-item--4 .carousel-item-image{
-    background-image: url('../treebg.jpg');
+.carousel-item--4 .carousel-item-image {
+  background-image: url("../treebg.jpg");
 }
 
-.carousel-item--5 .carousel-item-image{
-    background-image: url('../treebg.jpg');
+.carousel-item--5 .carousel-item-image {
+  background-image: url("../treebg.jpg");
 }
-
 
 .carousel-item-btn {
-    width: 35%;
-    color: #2C2C2C;
-    letter-spacing: 3px;
-    font-size: 11px;
-    text-transform: uppercase;
-    margin: 0;
-    width: 35%;
-    font-weight: 700;
+  width: 35%;
+  color: #2c2c2c;
+  letter-spacing: 3px;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 0;
+  width: 35%;
+  font-weight: 700;
   text-decoration: none;
-      transform: translateY(25%);
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.6s all ease-in-out;
+  transform: translateY(25%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s all ease-in-out;
 }
 
 .carousel-nav {
-    position: absolute;
-    right: 0;
-    z-index: 2;
-    background-color: #fff;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  background-color: #fff;
   bottom: 0;
 }
 
 .carousel-icon {
-    display: inline-block;
-    vertical-align: middle;
-    width: 16px;
-    fill: #5d5d5d;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  fill: #5d5d5d;
 }
 
 .carousel-arrow {
-    cursor: pointer;
-    display: inline-block;
-    padding: 11px 15px;
-    position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 11px 15px;
+  position: relative;
 }
 
 .carousel-arrow:nth-child(1):after {
-    content:'';
-    right: -3px;
-    position: absolute;
-    width: 1px;
-    background-color: #b0b0b0;
-    height: 14px;
-    top: 50%;
-    margin-top: -7px;
+  content: "";
+  right: -3px;
+  position: absolute;
+  width: 1px;
+  background-color: #b0b0b0;
+  height: 14px;
+  top: 50%;
+  margin-top: -7px;
 }
 
-.active{
-   z-index: 1;
+.active {
+  z-index: 1;
   display: flex;
-  visibility:visible;
+  visibility: visible;
 }
 
-.active .carousel-item-subtitle, .active .carousel-item-title, .active .carousel-item-description,.active .carousel-item-btn{
-    transform: translateY(0);
-    opacity: 1;
+.active .carousel-item-subtitle,
+.active .carousel-item-title,
+.active .carousel-item-description,
+.active .carousel-item-btn {
+  transform: translateY(0);
+  opacity: 1;
   transition: 0.6s all ease-in-out;
-    visibility: visible;
+  visibility: visible;
 }
 
-
-
-.active .carousel-item-image { 
-    transition: 0.6s all ease-in-out;
-    transform: translateX(0);
+.active .carousel-item-image {
+  transition: 0.6s all ease-in-out;
+  transform: translateX(0);
 }
 
 /* benefits of climate change */
 
 #benefits {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    -webkit-text-size-adjust: 100%;
-	-webkit-tap-highlight-color: transparent;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
-	user-select: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  user-select: none;
 }
 
 .benefits-container {
-    margin: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	max-width: 1000px;
-	min-height: 50vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 50vh;
 }
 
 @counter-style symbols {
-	system: cyclic;
-	symbols: "\01F30E";
-	suffix: "  ";
+  system: cyclic;
+  symbols: "\01F30E";
+  suffix: "  ";
 }
 
 .benefits-container div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	width: 100%;
-	background: #111;
-	padding: 20px;
-	border-radius: 50px;
-	outline: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: #111;
+  padding: 20px;
+  border-radius: 50px;
+  outline: 1px solid white;
 }
 
 .benefits-title {
-	position: relative;
-	font-size: 20pt;
-	margin: 0;
-	line-height: 34pt;
-	color: #eee;
-	margin-bottom: 10px;
-	text-align: center;
-	overflow: hidden;
+  position: relative;
+  font-size: 20pt;
+  margin: 0;
+  line-height: 34pt;
+  color: #eee;
+  margin-bottom: 10px;
+  text-align: center;
+  overflow: hidden;
 }
 
 .benefits-title::after {
-    position: absolute;
-	bottom: 0;
-	right: 100%;
-	width: 800%;
-	height: 4px;
-	background: linear-gradient(
-		90deg,
-		Red,
-		Orange,
-		Yellow,
-		LawnGreen,
-		Blue,
-		Violet
-	);
-	background-position: center;
-	content: "";
-	animation: title 5s ease-in-out infinite;
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  width: 800%;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    Red,
+    Orange,
+    Yellow,
+    LawnGreen,
+    Blue,
+    Violet
+  );
+  background-position: center;
+  content: "";
+  animation: title 5s ease-in-out infinite;
 }
 
 @keyframes title {
-	0% {
-		right: 100%;
-	}
-	100% {
-		right: -800%;
-	}
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: -800%;
+  }
 }
 
 .benefits-list {
-    position: relative;
-    width: 100%;
-	max-height: 230px;
-	display: flex;
-	flex-direction: column;
-	align-items: space-between;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	overflow-x: scroll;
-	overflow-y: hidden;
-    padding-inline-start: 40px;
-	padding-bottom: 15px;
+  position: relative;
+  width: 100%;
+  max-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-inline-start: 40px;
+  padding-bottom: 15px;
 }
 
 .benefits-list li {
-    position: relative;
-	color: #ccc;
-	padding: 10px 50px 10px 12px;
-	list-style-type: symbols;
-	font-size: 12pt;
-	line-height: 24pt;
-	font-weight: 500;
-	margin: 0px 60px 0px 0px;
-	text-shadow: 1px 1px 0px black, 2px 2px 0px black;
-	transition: all 0.1s linear;
+  position: relative;
+  color: #ccc;
+  padding: 10px 50px 10px 12px;
+  list-style-type: symbols;
+  font-size: 12pt;
+  line-height: 24pt;
+  font-weight: 500;
+  margin: 0px 60px 0px 0px;
+  text-shadow: 1px 1px 0px black, 2px 2px 0px black;
+  transition: all 0.1s linear;
 }
 
 .benefits-list li::after {
-    position: absolute;
-	bottom: 5px;
-	right: 10%;
-	width: 100%;
-	height: 2px;
-	background: #111;
-	content: "";
-	transition: all 0.2s ease-in-out;
+  position: absolute;
+  bottom: 5px;
+  right: 10%;
+  width: 100%;
+  height: 2px;
+  background: #111;
+  content: "";
+  transition: all 0.2s ease-in-out;
 }
 
 .benefits-list li:hover {
-    background: #ccc;
-	color: black;
-	cursor: pointer;
-	text-shadow: none;
-	transition: all 0.1s linear;
+  background: #ccc;
+  color: black;
+  cursor: pointer;
+  text-shadow: none;
+  transition: all 0.1s linear;
 }
 
 .benefits-list li:hover::after {
-    right: -20%;
-	transition: all 0.2s ease-in-out;
+  right: -20%;
+  transition: all 0.2s ease-in-out;
 }
 
 .benefits-list li::marker {
-    animation: idle 8s linear infinite;
+  animation: idle 8s linear infinite;
 }
 
 @keyframes idle {
-	0% {
-		transform: rotateY(0deg) translateX(0px) scale(1);
-		filter: saturate(100%) brightness(1);
-	}
-	50% {
-		transform: rotateY(180deg) translateX(10px) scale(1.4);
-		filter: saturate(300%) brightness(2);
-	}
-	100% {
-		transform: rotateY(360deg) translateX(0px) scale(1);
-		filter: saturate(100%) brightness(1);
-	}
+  0% {
+    transform: rotateY(0deg) translateX(0px) scale(1);
+    filter: saturate(100%) brightness(1);
+  }
+  50% {
+    transform: rotateY(180deg) translateX(10px) scale(1.4);
+    filter: saturate(300%) brightness(2);
+  }
+  100% {
+    transform: rotateY(360deg) translateX(0px) scale(1);
+    filter: saturate(100%) brightness(1);
+  }
 }
-
 
 @media (max-height: 700px) {
-    .benefits-container {
-        min-height: 70vh;
-    }
+  .benefits-container {
+    min-height: 70vh;
+  }
 }
 
-
 @media (max-width: 1090px) {
-	.benefits-container {
-		max-width: 920px;
-	}
+  .benefits-container {
+    max-width: 920px;
+  }
 }
 
 @media (max-width: 990px) {
-	.benefits-container {
-		max-width: 820px;
-	}
+  .benefits-container {
+    max-width: 820px;
+  }
 }
 
 @media (max-width: 890px) {
-	.benefits-container {
-		max-width: 720px;
-	}
+  .benefits-container {
+    max-width: 720px;
+  }
 }
 
 @media (max-width: 790px) {
-	.benefits-container {
-		max-width: 620px;
-	}
+  .benefits-container {
+    max-width: 620px;
+  }
 }
 
 @media (max-width: 690px) {
-	.benefits-container {
-		max-width: 520px;
-	}
-	.benefits-list li {
-		padding: 10px 20px 10px 12px;
-		margin: 0px 40px 0px 0px;
-	}
+  .benefits-container {
+    max-width: 520px;
+  }
+  .benefits-list li {
+    padding: 10px 20px 10px 12px;
+    margin: 0px 40px 0px 0px;
+  }
 }
 
 @media (max-width: 590px) {
-	.benefits-container {
-		max-width: 420px;
-	}
+  .benefits-container {
+    max-width: 420px;
+  }
 }
 
 @media (max-width: 490px) {
-	.benefits-container {
-		max-width: 320px;
-	}
-	.benefits-list li {
-		padding: 10px 10px 10px 10px;
-	}
+  .benefits-container {
+    max-width: 320px;
+  }
+  .benefits-list li {
+    padding: 10px 10px 10px 10px;
+  }
 }
 
 @media (max-width: 390px) {
-	.benefits-container {
-		max-width: 280px;
-	}
+  .benefits-container {
+    max-width: 280px;
+  }
 }
 
 /* scrollbar for the benefits section */
 #benefits ::-webkit-scrollbar {
-	height: 8px;
+  height: 8px;
 }
 
 #benefits ::-webkit-scrollbar-track {
-	background: #444;
-	border-radius: 30px;
+  background: #444;
+  border-radius: 30px;
 }
 
 #benefits ::-webkit-scrollbar-thumb {
-	background: #ccc;
-	width: 70px;
-	border-radius: 30px;
+  background: #ccc;
+  width: 70px;
+  border-radius: 30px;
 }
 
 #benefits ::-webkit-scrollbar-thumb:hover {
-	background: white;
+  background: white;
 }
-
 
 /* scroll video animation */
 #scrolling-vid-1 {
-    height: 100vh;
+  height: 100vh;
 }
-  
+
 #scrolling-vid-1 video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 #scrolling-vid-1 h1 {
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    font-size: 80px;
-    text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 80px;
+  text-align: center;
 }
 
 #scrolling-vid-2 {
-    height: 100vh;
+  height: 100vh;
 }
-  
+
 #scrolling-vid-2 video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 #scrolling-vid-2 h1 {
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    font-size: 80px;
-    text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 80px;
+  text-align: center;
 }
 
 /* cta */
 
 #cta {
-    line-height: 2.6rem;
-    margin-top: 5rem;
+  line-height: 2.6rem;
+  margin-top: 5rem;
 }
 
 #cta h1 {
-    font-size: 4rem;
-    font-weight: 900;
-    line-height: 1;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1;
 }
 
 .cta-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .cta-image-1 {
-    flex-basis: 30%;
-    overflow: hidden;
-    position: relative;
+  flex-basis: 30%;
+  overflow: hidden;
+  position: relative;
 }
 .cta-image-1--tablet {
-    display: none;
+  display: none;
 }
 .cta-image-2 {
-    flex-basis: 30%;
-    overflow: hidden;
-    position: relative;
-    text-align: right;
+  flex-basis: 30%;
+  overflow: hidden;
+  position: relative;
+  text-align: right;
 }
 .cta-image-1--desktop {
-    max-width: 100%;
-    height: auto;
-    position: relative;
+  max-width: 100%;
+  height: auto;
+  position: relative;
 }
 .cta-image-1--tablet {
-    max-width: 108%;
-    height: auto;
+  max-width: 108%;
+  height: auto;
 }
 .cta-image-2 img {
-    max-width: 100%;
-    height: auto;
-    position: relative;
+  max-width: 100%;
+  height: auto;
+  position: relative;
 }
 .cta-heading {
-    flex-basis: 39%;
-    text-align: center;
-    margin: 46px 68px 0px 68px;
+  flex-basis: 39%;
+  text-align: center;
+  margin: 46px 68px 0px 68px;
 }
 
 .cta-bottom-media {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: -7.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -7.5rem;
 }
 
 @media only screen and (max-width: 1450px) {
-    .cta-bottom-media {
-        top: 0;
-    }
+  .cta-bottom-media {
+    top: 0;
+  }
 }
 
 @media only screen and (max-width: 820px) {
-    #cta h1 {
+  #cta h1 {
     font-size: 3rem;
     padding: 0 20%;
-    }
-    .cta-container {
+  }
+  .cta-container {
     flex-direction: column;
-    }
-    .cta-image-1--desktop {
+  }
+  .cta-image-1--desktop {
     display: none;
-    }
-    .cta-image-1--tablet {
+  }
+  .cta-image-1--tablet {
     display: block;
-    }
-    .cta-image-2 {
+  }
+  .cta-image-2 {
     display: none;
-    }
-    .cta-heading {
+  }
+  .cta-heading {
     margin: 67px 125px 0px 125px;
-    }
+  }
 }
 
 @media only screen and (max-width: 620px) {
-    .cta-heading {
+  .cta-heading {
     margin: 67px 70px 0px 70px;
-    }
-    #cta h1 {
+  }
+  #cta h1 {
     font-size: 2.6rem;
-    }
+  }
 }
 
 @media only screen and (max-width: 475px) {
-    #cta h1 {
+  #cta h1 {
     font-size: 2.4rem;
     line-height: 4.4rem;
     padding: 0;
-    }
+  }
 
-    .cta-image-1--tablet {
+  .cta-image-1--tablet {
     max-width: 111%;
     margin-left: -20px;
-    }
-    .cta-heading {
+  }
+  .cta-heading {
     margin: 67px 24px 0px 24px;
-    }
+  }
 }
 
 .footer-top-margin {
-    margin-top: 550px;
+  margin-top: 550px;
 }
 
-.flowers-and-bees  {
+.flowers-and-bees {
   --flower1: #dad;
   --flower2: #8af;
   --flower3: #fbd;
@@ -1309,119 +1277,152 @@
   position: absolute;
   z-index: -1;
   background:
-    /* flower 1 */
-    radial-gradient(circle at 20% 60%, gold 1%, #0000 0),
+    /* flower 1 */ radial-gradient(
+      circle at 20% 60%,
+      gold 1%,
+      #0000 0
+    ),
     radial-gradient(200% 50% at 18% 60%, var(--flower1) 1%, #0000 0),
     radial-gradient(100% 150% at 20% 58%, var(--flower1) 1%, #0000 0),
     radial-gradient(circle at 18.5% 59%, var(--flower1) 1.5%, #0000 0),
     radial-gradient(circle at 18.5% 61.5%, var(--flower1) 1.5%, #0000 0),
     radial-gradient(circle at 21% 61.5%, var(--flower1) 1.75%, #0000 0),
     radial-gradient(circle at 21.5% 59%, var(--flower1) 1.5%, #0000 0),
-    radial-gradient(farthest-side at 100% 60%, #0000 90%, green 0 99.9%, #0000 0) 17.5% 80% / 5% 25% no-repeat,
-    radial-gradient(farthest-side at 50% 100%, green 99.9%, #0000 0) 18.5% 70% / 8% 1.5% no-repeat,
-    radial-gradient(farthest-side at 50% 20%, green 99.9%, #0000 0) 10% 75% / 8% 1.5% no-repeat,
-    /* flower 2 */
-    radial-gradient(circle at 25% 70%, gold 1%, #0000 0),
+    radial-gradient(
+        farthest-side at 100% 60%,
+        #0000 90%,
+        green 0 99.9%,
+        #0000 0
+      )
+      17.5% 80% / 5% 25% no-repeat,
+    radial-gradient(farthest-side at 50% 100%, green 99.9%, #0000 0) 18.5% 70% /
+      8% 1.5% no-repeat,
+    radial-gradient(farthest-side at 50% 20%, green 99.9%, #0000 0) 10% 75% / 8%
+      1.5% no-repeat,
+    /* flower 2 */ radial-gradient(circle at 25% 70%, gold 1%, #0000 0),
     radial-gradient(340% 150% at 25% 70.5%, var(--flower1) 1%, #0000 0),
     radial-gradient(100% 150% at 25% 68%, var(--flower1) 1%, #0000 0),
     radial-gradient(circle at 23.5% 69%, var(--flower1) 1.5%, #0000 0),
     radial-gradient(circle at 23.5% 71.5%, var(--flower1) 1.5%, #0000 0),
     radial-gradient(circle at 26% 71.5%, var(--flower1) 1.75%, #0000 0),
     radial-gradient(circle at 26.5% 69%, var(--flower1) 1.5%, #0000 0),
-    radial-gradient(farthest-side at 0% 75%, #0000 80%, green 0 99.9%, #0000 0) 25.5% 82% / 2% 15% no-repeat,
-    /* flower 3 */
-    radial-gradient(circle at 30% 50%, gold 1%, #0000 0),
+    radial-gradient(farthest-side at 0% 75%, #0000 80%, green 0 99.9%, #0000 0)
+      25.5% 82% / 2% 15% no-repeat,
+    /* flower 3 */ radial-gradient(circle at 30% 50%, gold 1%, #0000 0),
     radial-gradient(340% 150% at 30% 50.5%, var(--flower3) 1%, #0000 0),
     radial-gradient(100% 150% at 30% 48%, var(--flower3) 1%, #0000 0),
     radial-gradient(circle at 28.5% 49%, var(--flower3) 1.5%, #0000 0),
     radial-gradient(circle at 28.5% 51.5%, var(--flower3) 1.5%, #0000 0),
     radial-gradient(circle at 31% 51.5%, var(--flower3) 1.75%, #0000 0),
     radial-gradient(circle at 31.5% 49%, var(--flower3) 1.5%, #0000 0),
-    radial-gradient(farthest-side at 0% 55%, #0000 88%, green 0 99.9%, #0000 0) 30.5% 77% / 4% 35% no-repeat,
-    radial-gradient(farthest-side at 50% 0%, green 99.9%, #0000 0) 28.5% 66% / 6% 1.25% no-repeat,
-    /* flower 4 */
-    radial-gradient(circle at 38% 58%, gold 1%, #0000 0),
+    radial-gradient(farthest-side at 0% 55%, #0000 88%, green 0 99.9%, #0000 0)
+      30.5% 77% / 4% 35% no-repeat,
+    radial-gradient(farthest-side at 50% 0%, green 99.9%, #0000 0) 28.5% 66% /
+      6% 1.25% no-repeat,
+    /* flower 4 */ radial-gradient(circle at 38% 58%, gold 1%, #0000 0),
     radial-gradient(350% 180% at 38% 57.75%, var(--flower2) 1%, #0000 0),
     radial-gradient(circle at 37.5% 55.5%, var(--flower2) 1.5%, #0000 0),
     radial-gradient(circle at 37% 60%, var(--flower2) 1.5%, #0000 0),
     radial-gradient(circle at 39.25% 60%, var(--flower2) 1.75%, #0000 0),
     radial-gradient(circle at 39.75% 55.75%, var(--flower2) 1.5%, #0000 0),
-    radial-gradient(farthest-side at 100% 70%, #0000 75%, green 0 99.9%, #0000 0) 37.75% 78.5% / 2% 30% no-repeat,
-    /* flower 5 */
-    radial-gradient(circle at 45% 65%, gold 1%, #0000 0),
+    radial-gradient(
+        farthest-side at 100% 70%,
+        #0000 75%,
+        green 0 99.9%,
+        #0000 0
+      )
+      37.75% 78.5% / 2% 30% no-repeat,
+    /* flower 5 */ radial-gradient(circle at 45% 65%, gold 1%, #0000 0),
     radial-gradient(350% 200% at 45% 65.5%, var(--flower1) 1%, #0000 0),
     radial-gradient(100% 150% at 45% 63%, var(--flower1) 1%, #0000 0),
     radial-gradient(circle at 43.25% 63.5%, var(--flower1) 1.5%, #0000 0),
     radial-gradient(circle at 44% 67%, var(--flower1) 1.5%, #0000 0),
     radial-gradient(circle at 46.25% 66.25%, var(--flower1) 1.75%, #0000 0),
     radial-gradient(circle at 46.75% 63.75%, var(--flower1) 1.5%, #0000 0),
-    radial-gradient(farthest-side at 100% 70%, #0000 75%, green 0 99.9%, #0000 0) 44.5% 80% / 2% 20% no-repeat,
-    /* flower 6 */
-    radial-gradient(circle at 50% 71%, gold 1%, #0000 0),
+    radial-gradient(
+        farthest-side at 100% 70%,
+        #0000 75%,
+        green 0 99.9%,
+        #0000 0
+      )
+      44.5% 80% / 2% 20% no-repeat,
+    /* flower 6 */ radial-gradient(circle at 50% 71%, gold 1%, #0000 0),
     radial-gradient(350% 130% at 50% 71.5%, var(--flower2) 1%, #0000 0),
     radial-gradient(100% 150% at 50% 69%, var(--flower2) 1%, #0000 0),
     radial-gradient(circle at 48.25% 69.5%, var(--flower2) 1.5%, #0000 0),
     radial-gradient(circle at 49% 73%, var(--flower2) 1.5%, #0000 0),
     radial-gradient(circle at 51.25% 72.75%, var(--flower2) 1.75%, #0000 0),
     radial-gradient(circle at 51.75% 69.75%, var(--flower2) 1.5%, #0000 0),
-    radial-gradient(farthest-side at 20% 68%, #0000 72%, green 74% 98%, #0000 100%) 50.5% 83% / 2% 14% no-repeat,
-    /* flower 7 */
-    radial-gradient(circle at 55% 63%, gold 1%, #0000 0),
+    radial-gradient(
+        farthest-side at 20% 68%,
+        #0000 72%,
+        green 74% 98%,
+        #0000 100%
+      )
+      50.5% 83% / 2% 14% no-repeat,
+    /* flower 7 */ radial-gradient(circle at 55% 63%, gold 1%, #0000 0),
     radial-gradient(350% 130% at 55% 63.5%, var(--flower1) 1%, #0000 0),
     radial-gradient(circle at 54.25% 61.5%, var(--flower1) 2%, #0000 0),
     radial-gradient(circle at 54% 65%, var(--flower1) 1.5%, #0000 0),
     radial-gradient(circle at 56.25% 64.75%, var(--flower1) 1.75%, #0000 0),
     radial-gradient(circle at 56.75% 61.75%, var(--flower1) 1.5%, #0000 0),
-    radial-gradient(farthest-side at 20% 70%, #0000 72%, green 74% 98%, #0000 100%) 55.5% 80% / 2% 24% no-repeat,
-    /* flower 8 */
-    radial-gradient(circle at 62% 68%, gold 1%, #0000 0),
+    radial-gradient(
+        farthest-side at 20% 70%,
+        #0000 72%,
+        green 74% 98%,
+        #0000 100%
+      )
+      55.5% 80% / 2% 24% no-repeat,
+    /* flower 8 */ radial-gradient(circle at 62% 68%, gold 1%, #0000 0),
     radial-gradient(330% 170% at 62% 68.5%, var(--flower3) 1%, #0000 0),
     radial-gradient(circle at 60.5% 66.5%, var(--flower3) 1.5%, #0000 0),
     radial-gradient(circle at 63% 66.75%, var(--flower3) 2%, #0000 0),
     radial-gradient(circle at 61% 70%, var(--flower3) 1.75%, #0000 0),
     radial-gradient(circle at 63% 69.75%, var(--flower3) 1.75%, #0000 0),
-    radial-gradient(farthest-side at 0% 60%, #0000 75%, green 76% 97%, #0000 0) 63% 81% / 2% 18% no-repeat,
-    radial-gradient(farthest-side at 50% 100%, #7c8 99.9%, #0000 0) 59.5% 74.5% / 6% 0.75% no-repeat,
-    radial-gradient(farthest-side at 50% 100%, green 99.9%, #0000 0) 59.5% 74% / 6% 1.25% no-repeat,
-    radial-gradient(farthest-side at 50% 20%, green 99.9%, #0000 0) 48.5% 80% / 5% 1% no-repeat,
-    /* flower 9 */
-    radial-gradient(circle at 68% 53%, gold 1%, #0000 0),
+    radial-gradient(farthest-side at 0% 60%, #0000 75%, green 76% 97%, #0000 0)
+      63% 81% / 2% 18% no-repeat,
+    radial-gradient(farthest-side at 50% 100%, #7c8 99.9%, #0000 0) 59.5% 74.5% /
+      6% 0.75% no-repeat,
+    radial-gradient(farthest-side at 50% 100%, green 99.9%, #0000 0) 59.5% 74% /
+      6% 1.25% no-repeat,
+    radial-gradient(farthest-side at 50% 20%, green 99.9%, #0000 0) 48.5% 80% /
+      5% 1% no-repeat,
+    /* flower 9 */ radial-gradient(circle at 68% 53%, gold 1%, #0000 0),
     radial-gradient(330% 170% at 68% 53.5%, var(--flower1) 1%, #0000 0),
     radial-gradient(110% 140% at 68% 51%, var(--flower1) 1%, #0000 0),
     radial-gradient(circle at 66.25% 51.5%, var(--flower1) 1.5%, #0000 0),
     radial-gradient(circle at 67% 55%, var(--flower1) 1.5%, #0000 0),
     radial-gradient(circle at 69% 54.75%, var(--flower1) 1.75%, #0000 0),
     radial-gradient(circle at 69.25% 51.75%, var(--flower1) 1.5%, #0000 0),
-    radial-gradient(farthest-side at 10% 60%, #0000 75%, green 76% 97%, #0000 0) 69% 78% / 3% 35.5% no-repeat,
-    
-    /* flower 10 */
-    radial-gradient(circle at 75% 73%, gold 1%, #0000 0),
+    radial-gradient(farthest-side at 10% 60%, #0000 75%, green 76% 97%, #0000 0)
+      69% 78% / 3% 35.5% no-repeat,
+    /* flower 10 */ radial-gradient(circle at 75% 73%, gold 1%, #0000 0),
     radial-gradient(330% 130% at 75% 73.5%, var(--flower3) 1%, #0000 0),
     radial-gradient(110% 140% at 75% 71%, var(--flower3) 1%, #0000 0),
     radial-gradient(circle at 73.25% 71.5%, var(--flower3) 1.5%, #0000 0),
     radial-gradient(circle at 74% 75%, var(--flower3) 1.5%, #0000 0),
     radial-gradient(circle at 76% 74.75%, var(--flower3) 1.75%, #0000 0),
     radial-gradient(circle at 76.25% 71.75%, var(--flower3) 1.5%, #0000 0),
-    radial-gradient(farthest-side at 10% 60%, #0000 75%, green 76% 97%, #0000 0) 76% 84% / 2% 12% no-repeat,
-    radial-gradient(farthest-side at 50% 100%, green 99.9%, #0000 0) 74.75% 64% / 7% 1.25% no-repeat,
-    /* flower 11 */
-    radial-gradient(circle at 83% 62%, gold 1%, #0000 0),
+    radial-gradient(farthest-side at 10% 60%, #0000 75%, green 76% 97%, #0000 0)
+      76% 84% / 2% 12% no-repeat,
+    radial-gradient(farthest-side at 50% 100%, green 99.9%, #0000 0) 74.75% 64% /
+      7% 1.25% no-repeat,
+    /* flower 11 */ radial-gradient(circle at 83% 62%, gold 1%, #0000 0),
     radial-gradient(330% 170% at 83% 62.5%, var(--flower2) 1%, #0000 0),
     radial-gradient(circle at 81.5% 60.5%, var(--flower2) 1.5%, #0000 0),
     radial-gradient(circle at 82% 64%, var(--flower2) 1.5%, #0000 0),
     radial-gradient(circle at 84% 63.75%, var(--flower2) 1.75%, #0000 0),
     radial-gradient(circle at 84% 60.5%, var(--flower2) 1.65%, #0000 0),
-    radial-gradient(farthest-side at 10% 60%, #0000 75%, green 76% 97%, #0000 0) 84% 81.5% / 3% 25.5% no-repeat,
-    /* ground */
-    radial-gradient(100% 20% at 50% 90%, #7c8 45%, #0000 45.25%),
+    radial-gradient(farthest-side at 10% 60%, #0000 75%, green 76% 97%, #0000 0)
+      84% 81.5% / 3% 25.5% no-repeat,
+    /* ground */ radial-gradient(100% 20% at 50% 90%, #7c8 45%, #0000 45.25%),
     radial-gradient(100% 20% at 50% 83%, #7c8 49%, #0000 49.25%),
-    /* sun */
-    radial-gradient(circle at 50% 0%, #0000 20%, #d90c 0 33%, #0000 0) 34.33% 30% / 5% 5% no-repeat,
+    /* sun */ radial-gradient(circle at 50% 0%, #0000 20%, #d90c 0 33%, #0000 0)
+      34.33% 30% / 5% 5% no-repeat,
     radial-gradient(circle at 32% 26%, #d90c 1%, #0000 0),
     radial-gradient(circle at 38% 26%, #d90c 1%, #0000 0),
     radial-gradient(circle at 35% 25%, #fe0 12%, #fd0c 0, #0000 25%),
-    /* cloud */
-    radial-gradient(circle at 50% 68%, #fff 10%, #0000 10.25%),
+    /* cloud */ radial-gradient(circle at 50% 68%, #fff 10%, #0000 10.25%),
     radial-gradient(circle at 66% 70%, #fff 13%, #0000 13.25%),
     radial-gradient(circle at 76% 75%, #fff 8%, #0000 8.25%),
     radial-gradient(circle at 26% 78%, #fff 8%, #0000 8.25%),
@@ -1433,19 +1434,32 @@
     radial-gradient(circle at 76% 73%, #f0f8ff 14%, #0000 14.25%),
     radial-gradient(circle at 68% 58%, #f0f8ff 8%, #0000 8.25%),
     radial-gradient(circle at 66% 80%, #f0f8ff 17%, #0000 17.25%),
-    /* bg */
-    linear-gradient(#def 0 0)
-    ;
+    /* bg */ linear-gradient(#def 0 0);
   box-shadow: 0 0 0 100vmax #def;
   background-color: #f002;
 }
 
 @keyframes fly {
-  0%  { left: 60%; transform: rotateY(0); }
-  50% { left: 30%; transform: rotateY(0); }
-  51% { left: 30%; transform: rotateY(180deg); }
-  99% { left: 60%; transform: rotateY(180deg); }
-  100% { left: 60%; transform: rotateY(0); }
+  0% {
+    left: 60%;
+    transform: rotateY(0);
+  }
+  50% {
+    left: 30%;
+    transform: rotateY(0);
+  }
+  51% {
+    left: 30%;
+    transform: rotateY(180deg);
+  }
+  99% {
+    left: 60%;
+    transform: rotateY(180deg);
+  }
+  100% {
+    left: 60%;
+    transform: rotateY(0);
+  }
 }
 
 .flowers-and-bees::before {
@@ -1457,11 +1471,19 @@
   width: 8%;
   height: 6%;
   border-radius: 50%;
-  background: 
-    radial-gradient(circle at 26% 50%, #000 7%, #0000 0),
+  background: radial-gradient(circle at 26% 50%, #000 7%, #0000 0),
     radial-gradient(circle at 10% 50%, #000 5%, #0000 0),
-    radial-gradient(circle at 50% 0%, #0000 20%, #000 0 60%, #0000 0) 15% 70% / 10% 15% no-repeat,
-    radial-gradient(100% 200% at 0 50%, #0000 40%, #000 0 53%, #0000 0 66%, #000 0 80%, #0000 0 90%, #000 0);
+    radial-gradient(circle at 50% 0%, #0000 20%, #000 0 60%, #0000 0) 15% 70% /
+      10% 15% no-repeat,
+    radial-gradient(
+      100% 200% at 0 50%,
+      #0000 40%,
+      #000 0 53%,
+      #0000 0 66%,
+      #000 0 80%,
+      #0000 0 90%,
+      #000 0
+    );
   background-color: gold;
   box-shadow: 0 -20px 0 -5px #fffa, 10px -20px 0 -5px #fff, 17px 0 0 -13.5px;
 }

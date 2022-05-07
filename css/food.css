@@ -7,7 +7,6 @@ html {
   height: 100%;
 }
 
-
 /* header */
 /*  */
 /*  */
@@ -20,36 +19,35 @@ html {
 }
 
 .all-slides {
-    width: 500%;
-    height: 100%;
-  }
+  width: 500%;
+  height: 100%;
+}
 
 .slide-container {
   height: 100%;
-  width: calc( 100% / 5 );
+  width: calc(100% / 5);
   float: left;
   position: relative;
 }
 .slide-container:nth-child(1) {
-  background: #F64747;
+  background: #f64747;
 }
 .slide-container:nth-child(2) {
-  background: #22A7F0;
+  background: #22a7f0;
 }
 .slide-container:nth-child(3) {
-  background: #F9690E;
+  background: #f9690e;
 }
 .slide-container:nth-child(4) {
-  background: #9B59B6;
+  background: #9b59b6;
 }
 .slide-container:nth-child(5) {
-  background: #03C9A9;
+  background: #03c9a9;
 }
 
 .slide-container:nth-child(6) {
-  background: #03C9A9;
+  background: #03c9a9;
 }
-
 
 .slide-image-container {
   position: absolute;
@@ -66,13 +64,11 @@ html {
   padding: 0 5vw;
 }
 
-@media screen and (max-width : 800px) {
+@media screen and (max-width: 800px) {
   .slide-image-container img {
     height: 40vh;
   }
 }
-
-
 
 /* text after slider */
 #post-slider {
@@ -98,8 +94,6 @@ html {
   max-width: 500px;
   text-align: center;
 }
-
-
 
 /* food carousel */
 /* 
@@ -249,8 +243,6 @@ html {
 	left: 7px;
 } */
 
-
-
 /* card statistics  */
 
 #oneyear-stat {
@@ -265,7 +257,7 @@ html {
   margin: 0 auto;
 }
 
-@media screen and (max-width : 480px) {
+@media screen and (max-width: 480px) {
   #oneyear-stat .title,
   #oneyear-stat .cards {
     min-width: 19rem;
@@ -277,7 +269,7 @@ html {
   font-weight: 900;
   padding-top: 10vh;
 }
-@media screen and (max-width : 480px) {
+@media screen and (max-width: 480px) {
   #oneyear-stat .title {
     font-size: 3rem;
     text-align: center;
@@ -293,7 +285,7 @@ html {
   background-color: #fbcd8a;
   transform: translate(0.3rem, 2rem);
 }
-@media screen and (max-width : 480px) {
+@media screen and (max-width: 480px) {
   #oneyear-stat .title:after {
     left: 50%;
     position: absolute;
@@ -323,13 +315,13 @@ html {
   letter-spacing: 0.05rem;
   box-shadow: 0 1rem 3rem #aac1c7;
 }
-@media screen and (max-width : 480px) {
+@media screen and (max-width: 480px) {
   #oneyear-stat .card {
     margin-bottom: 2rem;
   }
 }
 
-@media screen and (max-width : 480px) {
+@media screen and (max-width: 480px) {
   #oneyear-stat .cards {
     flex-direction: column;
     align-items: center;
@@ -345,7 +337,6 @@ html {
     margin-bottom: 4rem;
   }
 }
-
 
 .card-img-container {
   height: 50%;
@@ -379,7 +370,8 @@ html {
   justify-content: center;
   align-items: center;
 }
-.card__stuff-icon, .card__stuff-text {
+.card__stuff-icon,
+.card__stuff-text {
   display: inline-block;
 }
 .card__stuff-icon {

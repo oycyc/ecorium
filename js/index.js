@@ -62,17 +62,22 @@ const video1Text = videoContainer1.querySelector("h1");
 let video1Scene = new ScrollMagic.Scene({
   duration: 3000,
   triggerElement: videoContainer1,
-  triggerHook: 0
+  triggerHook: 0,
 })
   .setPin(videoContainer1)
   .addTo(controller);
 
 // Text Animation Scene
-const video1TextAnimation = TweenMax.fromTo(video1Text, 4, { opacity: 1 }, { opacity: 0 });
+const video1TextAnimation = TweenMax.fromTo(
+  video1Text,
+  4,
+  { opacity: 1 },
+  { opacity: 0 }
+);
 let video1TextScene = new ScrollMagic.Scene({
   duration: 3000,
   triggerElement: videoContainer1,
-  triggerHook: 0
+  triggerHook: 0,
 })
   .setTween(video1TextAnimation)
   .addTo(controller);
@@ -91,8 +96,7 @@ setInterval(() => {
   video1.currentTime = video1Delay;
 }, 33.3);
 
-
-// Second Video - Don't Let This Happen 
+// Second Video - Don't Let This Happen
 const videoContainer2 = document.getElementById("scrolling-vid-2");
 const video2 = videoContainer2.querySelector("video");
 // prevent a bug where user could click on the video, which will start/pause the video (even with video controls removed)
@@ -105,21 +109,25 @@ video2.addEventListener("click", (event) => {
 });
 const video2Text = videoContainer2.querySelector("h1");
 
-
 let video2Scene = new ScrollMagic.Scene({
   duration: 2250,
   triggerElement: videoContainer2,
-  triggerHook: 0
+  triggerHook: 0,
 })
   .setPin(videoContainer2)
   .addTo(controller);
 
 // Text Animation Scene
-const video2TextAnimation = TweenMax.fromTo(video2Text, 3, { opacity: 1 }, { opacity: 0 });
+const video2TextAnimation = TweenMax.fromTo(
+  video2Text,
+  3,
+  { opacity: 1 },
+  { opacity: 0 }
+);
 let video2TextScene = new ScrollMagic.Scene({
   duration: 2250,
   triggerElement: videoContainer2,
-  triggerHook: 0
+  triggerHook: 0,
 })
   .setTween(video2TextAnimation)
   .addTo(controller);
@@ -138,6 +146,3 @@ setInterval(() => {
   delay2 += (scrollpos2 - delay2) * accelerationAmount2;
   video2.currentTime = delay2;
 }, 33.3);
-
-
-
