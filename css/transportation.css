@@ -246,36 +246,6 @@ body {
 	}
 }
 
-/*@media (min-width: 768px) { 
-	.comparison-heading h2 {
-		font-size: 3rem;
-		line-height: 1; 
-	}
-
-	.comparison-image-end {
-		width: 42.5%;
-	}
-
-	.comparison-image-start {
-		width: 42.5%;
-	}
-
-	.comparison-text {
-		margin-top: 0;
-		width: 58.5%;
-	}
-
-	.comparison-text h3 {
-		font-size: 2.25rem;
-		line-height: 2.5rem; 
-	}
-
-	.comparison-text p {
-		text-align: left;
-	}
- }
-
-
 */
 @media (min-width: 1280px) { 
 	.comparison-container {
