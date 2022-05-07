@@ -306,6 +306,8 @@ li a.nav-text.active {
     position: relative;
 }
 .hero-image-1--tablet {
+    margin-left: auto;
+    margin-right: auto;
     max-width: 108%;
     height: auto;
 }
