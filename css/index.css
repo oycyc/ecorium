@@ -5,6 +5,11 @@
     --colorShadeC: rgb(150, 232, 195);
     --colorShadeD: rgb(187, 232, 211);
     --colorShadeE: rgb(205, 255, 232);
+    --darkBlue: #85CBCC;
+    --lightBlue: #A8DEE0;
+    --paleOrange: #F9E2AE;
+    --brightOrange: #FBC78D;
+    --brightGreen: #A7D676;
 }
 
 .gradient-text {
@@ -22,7 +27,7 @@
 
 #hero {
     background-color: #ffcfdf;
-    background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+    background-image: linear-gradient(315deg, var(--brightGreen) 0%, var(--darkBlue) 74%);
 }
 
 #hero-container {
@@ -262,7 +267,7 @@
     overflow: hidden; 
     padding-top: 2.5rem;
     padding-bottom: 2.5rem; 
-    background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+    background-image: linear-gradient(315deg, var(--brightGreen) 0%, var(--lightBlue) 74%);
     display: flex; 
     flex-direction: column; 
     align-items: center; 
@@ -294,11 +299,12 @@
     font-size: 3rem;
     line-height: 1; 
     font-weight: 700; 
-    line-height: 1.25; 
+    line-height: 1.25;
+    text-align: center; 
 }
 
 .category-text-left h3 {
-    color: #EEF2FF; 
+    color: #333; 
     font-size: 3rem;
     line-height: 1; 
     font-weight: 700; 
@@ -308,24 +314,10 @@
 .category-block p {
     margin-top: 2rem;
     margin-bottom: 2rem; 
-    color: #ffffff; 
+    color: #212121; 
     text-align: center; 
     max-width: 24rem; 
     opacity: 0.75; 
-}
-
-.category-block a {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; 
-    padding-left: 1.5rem;
-    padding-right: 1.5rem; 
-    color: #ffffff; 
-    font-size: 1.125rem;
-    line-height: 1.75rem; 
-    font-weight: 500; 
-    border-radius: 9999px; 
-    border-width: 2px; 
-    border-color: #ffffff; 
 }
 
 .category-image-right {
@@ -375,11 +367,26 @@
 }
 
 .category-text-right h3 {
-    color: #EEF2FF; 
+    color: #333;; 
     font-size: 3rem;
     line-height: 1; 
     font-weight: 700; 
     line-height: 1; 
+}
+
+.learn-more {
+    background-color: var(--brightOrange);
+    color: #AAABAA;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+    font-size: 1.125rem;
+    line-height: 1.75rem; 
+    font-weight: 500; 
+    border-radius: 9999px; 
+    border-width: 2px; 
+    border-color: #ffffff; 
 }
 
 @media (min-width: 640px) { 
@@ -459,6 +466,7 @@
     .category-text-left h2 {
         margin-left: 0;
         margin-right: 0; 
+        text-align: unset;
     }
 
     .category-text-left h3 {
