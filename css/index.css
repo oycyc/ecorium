@@ -515,9 +515,9 @@
 
 .overlay {
   width: 100%;
-  max-width: 1140px;
+  max-width: 800px;
   max-height: 640px;
-  padding: 8rem 6rem;
+  padding: 3rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
