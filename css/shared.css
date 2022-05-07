@@ -40,6 +40,10 @@ a:visited {
   color: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 750px) {
   body {
     font-size: 15px;
