@@ -66,11 +66,11 @@ body {
 }
 
 .layer1 {
-  background-image: url("../blueOrange.svg");
+  background-image: url("../assets/dividers/blueOrange.svg");
 }
 
 .layer2 {
-  background-image: url("../orangeBlue.svg");
+  background-image: url("../assets/dividers/orangeBlue.svg");
 }
 
 .text-center {
