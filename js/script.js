@@ -1,10 +1,10 @@
-let testLottie = bodymovin.loadAnimation({
-  container: document.getElementById("test-div"),
-  path: "https://assets6.lottiefiles.com/packages/lf20_w91yuq5t.json",
-  renderer: "svg",
-  loop: true,
-  autoplay: true,
-});
+// let testLottie = bodymovin.loadAnimation({
+//   container: document.getElementById("test-div"),
+//   path: "https://assets6.lottiefiles.com/packages/lf20_w91yuq5t.json",
+//   renderer: "svg",
+//   loop: true,
+//   autoplay: true,
+// });
 
 const navbarEventHandler = (() => {
   const logo = document.querySelector("#logo");
