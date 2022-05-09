@@ -26,7 +26,7 @@ imageItem.addEventListener("click", () => {
   let styleValue = imageItem.getAttribute("style");
   imageMaskInner.setAttribute(
     "src",
-    styleValue.slice(styleValue.indexOf(": url(") + 7, -3)
+    "./assets/health/health-risk.webp"
   );
   imageMask.classList.remove("mask-off");
 });
