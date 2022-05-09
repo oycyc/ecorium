@@ -18,3 +18,10 @@ Japan for health.html: https://www.flaticon.com/free-icon/japan_197604?term=japa
 
 Github for footer: https://www.flaticon.com/free-icon/github_2111432#
 Email logo for footer: https://www.flaticon.com/premium-icon/email_3178158?related_id=3178165&origin=search#
+
+Steak and Fries for food.html: https://unsplash.com/photos/pe9dvM1rQkM
+Pizza for food.html: https://unsplash.com/photos/SU1LFoeEUkk
+Fried Chicken for food.html: https://unsplash.com/photos/NbXjZomyNEM
+Fast Food for food.html: https://unsplash.com/photos/J9lD6FS6_cs
+Food Waste for food.html: https://unsplash.com/photos/c-R885Oc7k0
+Meal for food.html: https://unsplash.com/photos/yUIN4QWKCTw
