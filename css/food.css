@@ -7,6 +7,14 @@ html {
   height: 100%;
 }
 
+:root {
+  --darkBlue: #85cbcc;
+  --lightBlue: #a8dee0;
+  --paleOrange: #f9e2ae;
+  --brightOrange: #fbc78d;
+  --brightGreen: #a7d676;
+}
+
 /* header */
 /*  */
 /*  */
@@ -30,23 +38,19 @@ html {
   position: relative;
 }
 .slide-container:nth-child(1) {
-  background: #f64747;
+  background: var(--brightGreen);
 }
 .slide-container:nth-child(2) {
-  background: #22a7f0;
+  background: var(--lightBlue);
 }
 .slide-container:nth-child(3) {
-  background: #f9690e;
+  background: var(--paleOrange);
 }
 .slide-container:nth-child(4) {
-  background: #9b59b6;
+  background: var(--darkBlue);
 }
 .slide-container:nth-child(5) {
-  background: #03c9a9;
-}
-
-.slide-container:nth-child(6) {
-  background: #03c9a9;
+  background: var(--brightOrange);
 }
 
 .slide-image-container {
@@ -242,6 +246,10 @@ html {
 	top: 10px;
 	left: 7px;
 } */
+
+.article-heading {
+  background-image: url('../assets/food/article-header.jpg');
+}
 
 /* card statistics  */
 
