@@ -1487,3 +1487,9 @@
   background-color: gold;
   box-shadow: 0 -20px 0 -5px #fffa, 10px -20px 0 -5px #fff, 17px 0 0 -13.5px;
 }
+
+@media (max-width: 600px) {
+  .flowers-and-bees {
+    width: 100%;
+  }
+}
