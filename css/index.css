@@ -1190,7 +1190,7 @@
   position: relative;
 }
 .cta-image-1--tablet {
-  max-width: 108%;
+  max-width: 100%;
   height: auto;
 }
 .cta-image-2 img {
