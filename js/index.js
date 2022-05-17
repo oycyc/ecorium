@@ -60,7 +60,7 @@ video1.addEventListener("click", (event) => {
 const video1Text = videoContainer1.querySelector("h1");
 
 let video1Scene = new ScrollMagic.Scene({
-  duration: 3000,
+  duration: 1400,
   triggerElement: videoContainer1,
   triggerHook: 0,
 })
@@ -75,7 +75,7 @@ const video1TextAnimation = TweenMax.fromTo(
   { opacity: 0 }
 );
 let video1TextScene = new ScrollMagic.Scene({
-  duration: 3000,
+  duration: 1400,
   triggerElement: videoContainer1,
   triggerHook: 0,
 })
@@ -110,7 +110,7 @@ video2.addEventListener("click", (event) => {
 const video2Text = videoContainer2.querySelector("h1");
 
 let video2Scene = new ScrollMagic.Scene({
-  duration: 2250,
+  duration: 1000,
   triggerElement: videoContainer2,
   triggerHook: 0,
 })
@@ -125,7 +125,7 @@ const video2TextAnimation = TweenMax.fromTo(
   { opacity: 0 }
 );
 let video2TextScene = new ScrollMagic.Scene({
-  duration: 2250,
+  duration: 1000,
   triggerElement: videoContainer2,
   triggerHook: 0,
 })

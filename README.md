@@ -1,9 +1,5 @@
 # ecorium
 
-## todos
-- fill in all the img alt tags
-- beautify format all html css and js
-
 ### index.html
 
 ### food.html
