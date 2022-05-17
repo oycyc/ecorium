@@ -9,6 +9,8 @@ Solar for transportation.html: https://www.flaticon.com/free-icon/solar-energy_2
 Wind Turbine for transportation.html: https://www.flaticon.com/free-icon/wind-turbine_7299222#
 Hydropower for transportation.html: flaticon.com/premium-icon/hydro-power_3444136#
 Geothermal Energy for transportation.html: https://www.flaticon.com/premium-icon/geothermal-energy_2355266#
+Transportation for transportation.html: https://www.flaticon.com/free-icon/transportation_995297
+Green Car for transportation.html: https://www.flaticon.com/free-icon/green-car_7529552
 
 China for health.html: https://www.flaticon.com/free-icon/china_197375?term=china&page=1&position=3#
 USA for health.html: https://www.flaticon.com/free-icon/united-states_197484?term=united%20states&page=1&position=1&page=1&position=1&related_id=197484&origin=style#
