@@ -1,3 +1,11 @@
+h2 {
+    font-size: 2em;
+}
+
+h2:not(:first-of-type) {
+    padding-top: 1em;
+}
+
 #hero {
     line-height: 2rem;
     padding-bottom: 0;
@@ -18,7 +26,7 @@
     background-color: var(--darkBlue);
 }
 
-a {
+p a {
     text-decoration: underline;
     color: #333;
 }
