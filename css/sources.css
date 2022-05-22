@@ -1,0 +1,19 @@
+#hero {
+    line-height: 2rem;
+    padding-bottom: 0;
+    background-color: var(--darkBlue);
+}
+
+.sources {
+    justify-content: center;
+    align-items: center;
+}
+
+.sources-article {
+    background-color: var(--darkBlue);
+}
+
+a {
+    text-decoration: underline;
+    color: #333;
+}
