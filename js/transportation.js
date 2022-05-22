@@ -160,7 +160,7 @@ function countdown() {
   var secs = 3;
 
   function addNumber() {
-    // handle mpg meter
+    // handle mph meter
     if (run) {
       num++;
       if (num < 181) {
